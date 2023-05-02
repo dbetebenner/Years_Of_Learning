@@ -1,4 +1,6 @@
-## Learning by the Year:<br>On the concept of a year's worth of learning
+# Years of Learning
+
+# Learning by the Year:<br>On the concept of a year's worth of learning
 
 A year's worth of learning (sometimes referred to as _a year's worth of growth_ or _a year's worth of progress_) is not a new idea. The phrase has
 been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I 
