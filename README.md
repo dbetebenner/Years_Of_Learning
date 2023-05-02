@@ -2,8 +2,8 @@
 
 A year's worth of learning (sometimes referred to as _a year's worth of growth_ or _a year's worth of progress_) is not a new idea. The phrase has
 been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I 
-actually came across [a paper](https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/yearsgrowth.pdf) that I and 
-[@shangyi](https://github.com/shangyi) wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue 
+actually came across <a href="https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/yearsgrowth.pdf" target="_blank">a paper</a>
+that [@shangyi](https://github.com/shangyi) and I wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue 
 suggesting something simple and obvious. Scratch beneath the surface and one finds the concept is anything but. 
 
 # Resources
