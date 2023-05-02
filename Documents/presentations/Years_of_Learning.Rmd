@@ -1,0 +1,17 @@
+---
+title: Years of Learning Presentations
+date: "`r toOrdinal::toOrdinalDate(Sys.Date())`"
+---
+
+# May 1, 2023 Presentations
+
+## Learning by the Year: On the notion of a year's worth of learning
+
+```{r, echo = FALSE}
+    xaringanExtra::embed_xaringan(
+    url = '../../presentations/years_of_learning.html',
+    ratio = "16:9",
+    max_width = 800
+    )
+```
+

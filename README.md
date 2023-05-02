@@ -1,19 +1,6 @@
-# NCME 2022 Demonstration
+# Learning by the Year: On the idea of a year's worth of learning
 
-# Using GitHub for Open-Source Analytics, Reporting, and Dissemination of Research
-
-This GitHub repo provides source code associated with the NCME group demonstration showcasing
-novel uses of GitHub for promoting research in educational assessment. Specifically, we present a
-series of public GitHub repositories that researchers can easily customize for their own uses.
-
-These repositories are structured such that researchers with a basic understanding of GitHub and R
-can either (a) modify a set of parameters and efficiently run a comprehensive analysis, or (b)
-leverage the basic repository structure to develop and disseminate their own suite of analytic tools.
-Across all demonstrations, we expand beyond the basics of GitHub repositories to highlight unique
-applications of the platform to educational assessment data.
-
-The four demonstrations are described below linking to their individual repos and presentations:
-
+The idea of "a year's worth of learning" is now new.  
 ## Using GitHub to building and distribute R packages [@dbetebenner](https://github.com/dbetebenner)
 
 Perhaps the greatest strength of [R](https://cran.r-project.org/) is its extensibility. The ability to
