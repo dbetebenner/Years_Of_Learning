@@ -35,7 +35,7 @@ navbar:
       menu:
       - text: "Years of Learning"
       - text: "May 2023"
-        href: articles/releases/Years_of_Learning.html
+        href: articles/releases/News_May_2023.html
     right:
       - icon: fab fa-github
         href: https://github.com/dbetebenner/Years_of_Learning

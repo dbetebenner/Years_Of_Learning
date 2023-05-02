@@ -1,0 +1,444 @@
+:root {
+/* COLOR VARIABLES */
+/* primary and secondary colors and variants */
+--cfa-primary:  #121824; /* primary color */
+--cfa-green:    #29a829;
+
+--inverse-text: #eeeeef;
+--inverse-bkgd: #7d7d7b; /* also used for footer text */
+--inverse-brdr: #29a82920;
+
+--code-text: rgba(169, 5, 51, 1);
+}
+
+
+/*--------------  SLIDE CONTENT  -------------- */
+
+.github-corner {
+  border-bottom: 0;
+  position: fixed;
+  right: 0;
+  text-decoration: none;
+  top: 0;
+  z-index: 1;
+}
+
+.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
+
+.github-corner svg {
+  color: var(--cfa-green);
+  fill: var(--cfa-primary);
+  height: 100px;
+  width: 100px;
+}
+
+/*--------------  INVERSE SLIDE MODIFICATIONS  -------------- */
+/*-- Put inverse before title class - title based on .inverse by remark.js --*/
+/*-- https: //github.com/yihui/xaringan/wiki/Title-slide --*/
+
+.inverse {
+  background-color: var(--inverse-bkgd);
+  color: var(--inverse-text);
+  text-shadow: 0 0 20px rgb(51, 51, 51);
+  background-image: url(https://raw.githubusercontent.com/CenterForAssessment/cfaDocs/main/inst/rmarkdown/shared_resources/img/CFA_Logo_alpha_07.svg);
+  background-size: contain;
+  border-right: 100px solid var(--inverse-brdr);
+  height: 250px;
+  border-left: 100px solid var(--inverse-brdr);
+  height: 250px;
+}
+
+.inverse h1,
+.inverse h2,
+.inverse h3 {
+  color: var(--inverse-text);
+}
+
+.inverse .remark-slide-number {
+  font-size: 14pt;
+  color: var(--inverse-text);
+  opacity: 1;
+  line-height: 1.6em;
+}
+
+
+/*--------------  TITLE SLIDE MODIFICATIONS  -------------- */
+/*-- Custom class for the title slide --*/
+
+.title-slide {
+  background-color: white;
+  color: var(--cfa-primary);
+  background-image: url(https://raw.githubusercontent.com/CenterForAssessment/cfaDocs/main/inst/rmarkdown/shared_resources/img/CFA_Logo_alpha_07.svg),
+                    url(https://mirrors.creativecommons.org/presskit/cc.logo.svg),
+                    url(https://mirrors.creativecommons.org/presskit/icons/by.svg);
+  background-size: contain, 10%, 2.125%;
+  background-position: center, bottom 2.5% right 3%, bottom 2.5% right 0.5%;
+  border-right: 100px solid var(--cfa-green);
+  height: 250px;
+  border-left: 100px solid var(--cfa-green);
+  height: 250px;
+}
+
+/* turns off slide numbers for title page: */
+/* https://github.com/gnab/remark/issues/298 */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.title h1 {
+  color: var(--cfa-primary);
+  text-shadow: none;
+  line-height: 1.25em;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.subtitle h2 {
+  color: var(--cfa-primary);
+  text-shadow: none;
+  line-height: 1.25em;
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+.title, .subtitle, .author, .institute, .date {
+  margin-right: 1.15em;
+  /* text-align: left; */
+}
+
+.institute {
+  font-style: italic;
+}
+.author, .date {
+  margin-top: 1.25em;
+  margin-bottom: -1.25em;
+}
+
+.author h3, .date h3, .institute h3 {
+  color: var(--cfa-primary);
+  text-shadow: none;
+  line-height: 1.25em;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+/*-- LINKS/ANCHORS --*/
+a, a > code {
+  color: var(--cfa-green); /* sets color of links */
+  line-height: 1.6rem;
+  text-decoration: underline; /* turns off background coloring of links */
+}
+
+a:hover { border-bottom: none; }
+
+
+/*-- PARAGRAPH TEXT --*/
+.remark-slide-content:not(pre, code, .title-slide, .inverse) {
+  font-size: 1.6rem; /* paragraph text only */
+  padding: 1em 6em 1em 6em;
+  line-height: 1.5em;
+  background-image: url(https://raw.githubusercontent.com/CenterForAssessment/cfaDocs/main/inst/rmarkdown/shared_resources/img/CFA_Logo_alpha_07.svg),
+    url(https://raw.githubusercontent.com/CenterForAssessment/cfaDocs/main/inst/rmarkdown/shared_resources/img/CFA_Logo_alpha_07.svg);
+  background-size: 40%, 40%;
+  background-position: bottom 20% left 138%, bottom 30% right 142%;
+}
+
+/*-- HEADINGS --*/
+
+h1:not(div.title > h1, .inverse h1) {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-right: -75px;
+  margin-left: -75px;
+  line-height: 1.75em;
+  border-bottom: 2px solid var(--cfa-green);
+}
+
+h2:not(div.subtitle > h2), h3:not(div.author > h3, div.institute > h3, div.date > h3), h4 {
+  text-align: center;
+  font-weight: 300;
+  padding-top: 0px;
+  margin-left: 00px;
+  margin-bottom: -10px;
+  padding-bottom: 0px;
+  text-shadow: none;
+  line-height: 1.5em;
+}
+
+h2:not(div.subtitle > h2) {
+  border-bottom: 1.5px solid var(--cfa-green);
+}
+
+.remark-slide-content h2:not(div.subtitle > h2) {
+  /*font-size: 35px;*/
+  font-size: 1.5em;
+}
+
+.remark-slide-content h3:not(div.author > h3, div.institute > h3, div.date > h3) {
+  /*font-size: 30px;*/
+  font-size: 1.3em;
+}
+
+
+/*-- HORIZONTAL BARS --*/
+hr {
+  content: '';
+  display: block;
+  border:  none;
+  background-color: var(--cfa-green);
+  height:  0.08em;
+}
+
+/*-- TABLES -- */
+
+.lightable-paper td {
+  padding: 1px 1px;
+}
+
+/*-------------- BOTTOM-OF-SLIDE PROPERTIES -------------- */
+
+.remark-slide-number {
+  font-size: 0.75em;
+  color: var(--inverse-bkgd);
+  opacity: 1;
+  position: absolute;
+  right: 5%;
+  bottom: 3%;
+}
+
+/*-- Footnote --*/
+.footnote {
+  position: absolute;
+  bottom: 2em;
+  padding-right: 4em;
+  font-size: 75%;
+  line-height: 1em;
+}
+
+/*-- Persistent link in footer --*/
+/* https://github.com/rstudio-education/teaching-in-production/blob/master/slides/assets/css/my-theme.css */
+
+div.footer {
+  position: absolute;
+  bottom: 3%;
+}
+
+a.footer {
+  color: var(--inverse-bkgd);
+  font-size: 0.75em;
+  line-height: 1.85rem;
+  text-decoration: none;
+}
+
+.inverse a.footer {
+  color: var(--inverse-text);
+  font-size: 0.95em;
+  text-decoration: none;
+}
+
+a.footer:hover {
+  color: var(--cfa-green);
+}
+
+.inverse a.footer:hover {
+  color: var(--cfa-green);
+}
+
+/*-------------- CODE TEXT -------------- */
+
+/*-- In-line highlighting within text --*/
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono', monospace;
+  /* font-weight: 400; */
+  color: var(--code-text);
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  padding: 0.5px 0.5px 0.5px 0.5px;
+}
+
+/*-- CODE CHUNKS --*/
+
+pre code {
+  font-family: 'Ubuntu Mono', monospace;
+  line-height: 1.75em;
+}
+
+
+/*-------------- CUSTOM CLASSES -------------- */
+
+/*-- Slide layout --*/
+.pull-left {
+  float: left;
+  width: 40%;
+}
+
+.pull-right {
+  float: right;
+  width: 55%;
+}
+
+.pull-left-equal {
+  float: left;
+  width: 50%;
+}
+
+.pull-right-equal {
+  float: right;
+  width: 50%;
+}
+
+.pull-right-equal + * {
+  clear: both;
+}
+
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 0em;
+}
+
+/*-- Narrow left, wide right --*/
+
+.left-col-narrow {
+  float: left;
+  width: 20%;
+}
+
+.right-col-wide {
+  float: right;
+  width: 75%;
+}
+
+.right-col-wide + * {
+  clear: both;
+}
+
+/*-- 3 column layout --*/
+.left-col {
+  width: 29%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+.center-col {
+  width: 29%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+.right-col {
+  width: 29%;
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+.white {
+  background-color: white;
+  padding-bottom: 1px;
+}
+
+.highlight {
+  background-color: #edcdd6;
+  border-radius: 5px;
+  padding: 0.1em .25em 0.1em 0.25em;
+  font-weight: bold;
+}
+
+/*--PANELSET MODIFICATIONS--*/
+
+.panelset .panel-tabs .panel-tab {
+  min-height: 50px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  /*padding: 0.5em 1em;*/
+  padding: 0.5em 1em;
+  font-family: var(--panel-tab-font-family);
+  opacity: var(--panel-tab-inactive-opacity);
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  color: var(--panel-tab-foreground);
+  background-color: var(--panel-tab-background);
+  list-style: none;
+  z-index: 5;
+}
+
+/*-- highlighting last-of-type --*/
+/*--source: https://www.garrickadenbuie.com/blog/better-progressive-xaringan/?panelset=r-markdown&panelset1=slides2#highlight-last-list-item */
+.highlight-last-item > ul > li,
+.highlight-last-item > ol > li {
+  opacity: 0.85;
+}
+.highlight-last-item > ul > li:last-of-type,
+.highlight-last-item > ol > li:last-of-type {
+  opacity: 1;
+  color: var(--cfa-green);
+  font-weight: bold;
+  list-style: none;
+  width: 95%;
+}
+/*--editing bullet points--*/
+
+li::marker {
+  color: var(--cfa-green);
+}
+
+/*-------------- DEFAULT CLASSES -------------- */
+/*  From xaringan default.css  */
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.remark-slide table thead th {
+  border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+.remark-slide thead,
+.remark-slide tfoot,
+.remark-slide tr:nth-child(even) {
+  background: #eee
+}
+
+@page {
+  margin: 0;
+}
+
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
