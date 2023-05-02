@@ -1,4 +1,4 @@
-# Learning by the Year: On the idea of a year's worth of learning
+# Learning by the Year:\nOn the idea of a year's worth of learning
 
 The idea of "a year's worth of learning" is now new.  
 ## Using GitHub to building and distribute R packages [@dbetebenner](https://github.com/dbetebenner)
