@@ -26,7 +26,7 @@ navbar:
     - text: Presentations
       menu:
       - text: "Years of Learning"
-        href: articles/presentations/Demonstration_Session_Presentations.html#years_of_learning
+        href: articles/presentations/years_of_learning.html#years_of_learning
     - text: Documents
       menu:
       - text: "Years of Learning"
