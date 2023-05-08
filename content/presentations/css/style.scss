@@ -1,0 +1,7 @@
+/*-- scss:defaults --*/
+
+$body-color: #12273F;
+$link-color: #3CD7D9;
+$code-color: #9E71FE;
+$dark-bg-code-color: lighten($code-color, 15%);
+$light-bg-code-color: darken($code-color, 15%);

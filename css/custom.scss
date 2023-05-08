@@ -1,0 +1,144 @@
+/*-- scss:defaults --*/
+$h2-font-size:          1.6rem !default;
+$headings-font-weight:  500 !default;
+
+/*-- scss:rules --*/
+
+/* For shrinking navbar ------------------ */
+
+ .navbar {
+    background-image: linear-gradient(to bottom, #f4fda6 0%, #b6e202 100%);
+    border-color: transparent;
+    border-bottom: 1px solid #444;
+    -webkit-box-shadow: 0 3px 12px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 12px 0px rgba(0, 0, 0, 0.1);
+    min-height: 50px;
+    transition: all 0.35s ease; 
+ }
+
+ .navbar.shrink {
+    min-height: 0;
+    padding: 0 0;
+    background-size: 32px auto;
+    transition-duration: 0.25s;
+ }
+  
+ .navbar-title {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    padding: 0 0 0 0px;
+    height: 48px;
+    line-height: 55px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    transition-duration: 0.25s;
+ }
+
+ .navbar-title:hover {
+    color: black;
+ }
+
+ .navbar-title.shrink {
+    font-size: 32px;
+    transition-duration: 0.25s;
+ }
+
+ .navbar-logo {
+    background-image: url(./images/cfa_logo_grey.png);
+    max-height: 36px;
+    transition: all 0.25s; 
+ }
+
+ .navbar-logo.shrink {
+    max-height: 28px;
+    transition-duration: 0.25s;
+ }
+
+ .navbar-logo:hover, .navbar-logo:focus {
+    background-image: url(./images/cfa_logo_color.png);
+    transition: all 0.25s;
+ }
+
+ .navbar-brand-container {
+    padding: 0 0 0 60px;
+ }
+
+ .navbar-brand-logo {
+    margin-bottom: 8px;
+ }
+
+ .bi-twitter {
+    font-size: 28px;
+    color: #7c7c7c;
+    transition: all 0.35s ease-in-out;
+ } 
+  
+ .bi-twitter:hover {
+    color: #00ACED;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    transition: all 0.35s ease-in-out;
+ }
+
+ .bi-github {
+    font-size: 28px;
+    color: #7c7c7c;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: black;
+    transition: all 0.35s ease-in-out;
+ } 
+    
+ .bi-github:hover {
+    color: black;
+    transition: all 0.35s ease-in-out;
+  }
+
+ nav .nav-item:not(.compact) {
+    padding-top: 7px
+ }
+
+ .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
+    width: 28px;
+    height: 30px;
+    color: #7c7c7c;
+    opacity: 1
+}
+
+ .navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon:hover {
+    color: magenta;
+    transition: all 0.35s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: black;
+}
+
+#title-slide {
+   font-size: 30px!important;
+ }
+ 
+ #title-slide h2 {
+   font-size: 2.3em!important;
+ }
+
+ #title-slide {
+   text-align: left;
+ }
+
+ .slide-number:first-child {
+   display:none!important;
+ }
+
+ .title-box {
+   background-color: white;
+   padding: 25px;
+   border: 5px solid black;
+   text-align: center;
+   width: 80%;
+   margin-left: 5em;
+ }

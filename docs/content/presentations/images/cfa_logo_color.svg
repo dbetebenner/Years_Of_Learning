@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="87px" viewBox="0 0 92 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M41.098,0.844 L16.876,12.139 C2.769,18.717 -3.358,35.549 3.219,49.655 C9.798,63.762 26.63,69.89 40.736,63.31 C54.844,56.731 60.97,39.9 54.392,25.793 L42.459,0.209 L41.098,0.844 Z" id="path-1"></path>
+        <path d="M24.682,0.626 L0.624,66.717 L24.682,0.626 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CFA_Logo" transform="translate(4.000000, 2.000000)">
+            <g id="Group-3" transform="translate(0.000000, 2.000000)" stroke="#000000">
+                <path d="M58.127997,25.718 C52.466997,13.576 38.035997,8.323004 25.895997,13.984 C13.754997,19.646 8.503,34.077 14.163997,46.218 C19.824997,58.357 34.256997,63.61 46.396997,57.949 C58.536997,52.288 63.788997,37.857 58.127997,25.718 Z M69.707997,48.181 C76.453997,29.647 66.896997,9.151004 48.361997,2.405004 C29.827997,-4.338996 9.333,5.215004 2.587,23.75 C-4.159,42.285 5.397,62.781 23.931997,69.527 C42.466997,76.273 62.961997,66.717 69.707997,48.181 Z" id="Stroke-1" stroke-width="7"></path>
+                <path d="M68.15,20.112 C64.219,12.173 57.345,5.675 48.362,2.405" id="Stroke-2" stroke-width="6.3"></path>
+            </g>
+            <g id="Group-6" transform="translate(28.000000, 16.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-5"></g>
+                <polygon id="Fill-4" fill="#009C49" mask="url(#mask-2)" points="-4.42323 70.953897 62.03502 70.953897 62.03502 -4.791003 -4.42323 -4.791003"></polygon>
+            </g>
+            <path d="M69.098,16.844 L44.876,28.139 C30.769004,34.717 24.642004,51.549 31.219004,65.655 C37.798004,79.762 54.63,85.89 68.736,79.31 C82.844,72.731 88.97,55.9 82.392,41.793 L70.459,16.209 L69.098,16.844 Z" id="Stroke-7" stroke="#FFFFFF" stroke-width="5.25"></path>
+            <g id="Group-10" transform="translate(46.000000, 15.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-9"></g>
+                <polygon id="Fill-8" fill="#009C49" mask="url(#mask-4)" points="-4.376 71.717 29.682 71.717 29.682 -4.374 -4.376 -4.374"></polygon>
+            </g>
+            <g id="Group-14" transform="translate(33.000000, 15.000000)" stroke="#FFFFFF" stroke-width="5">
+                <path d="M37.682,0.626 L13.624,66.717" id="Stroke-11"></path>
+                <polyline id="Stroke-12" points="0.473 17.791 18.021 55.423 50.44 40.301"></polyline>
+                <polyline id="Stroke-13" stroke-linejoin="round" points="17.701 12.254 26.705 31.562 45.539 22.776"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

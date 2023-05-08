@@ -1,0 +1,73 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+   - "*.qmd"
+   - "!pkg/"
+
+exectute:
+  freeze: auto
+
+website:
+  site-url: "https://dbetebenner.github.io/Years_of_Learning/"
+  repo-url: "https://github.com/dbetebenner/Years_of_Learning"
+  title: "Effective Data Visualization with R"
+  repo-actions: [edit, issue]
+  favicon: images/cfa_logo_color.png
+
+  # navigation
+  page-navigation: true
+  navbar:
+    title: "Years of Learning"
+    logo: images/cfa_logo_grey.png
+    logo-href: "https://centerforassessment.github.io/"
+    search: false
+    pinned: true
+    foreground: "#7c7c7c"
+    right:
+      - text: Documents
+        href: documents.qmd
+      - text: Presentations 
+        href: presentations.qmd
+      - text: News
+        href: news.qmd
+      - icon: github
+        aria-label: github
+        href: https://github.com/dbetebenner/Years_of_Learning
+      - icon: twitter
+        aria-label: twitter
+        href: https://twitter.com/dbetebenner
+
+  search:
+    location: navbar
+    type: overlay
+    copy-button: true
+
+  #footer
+  page-footer:
+    center:
+      - text: About
+        href: about.qmd
+      - icon: github
+        text: GitHub
+        aria-label: github
+        href: https://https://github.com/dbetebenner/Years_of_Learning
+
+  #socials
+  open-graph: true
+  twitter-card: 
+    creator: "@dbetebenner"
+    site: "@nciea1"
+
+format:
+  html:
+    theme:
+     - cosmo
+     - css/custom.scss
+    css: css/styles.css
+    toc: true
+    include-after: |
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
+      <script type="text/javascript" src="js/scroll.js"></script>

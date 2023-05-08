@@ -1,0 +1,44 @@
+---
+title: "About"
+---
+
+Welcome to the [effective data visualisation with R]{style="color:#006DAE;"} workshop!
+
+
+<i class="fas fa-calendar" style="width:40px;"></i>  Tuesday 6th December 2022  
+<i class="fas fa-clock" style="width:40px;"></i>   9.00AM - 12.00PM AEDT  
+<i class="fas fa-map-pin" style="width:40px;"></i>  Zoom (links provided to participants via email)
+
+## Materials
+
+All materials are hosted on a GitHub repo [here](https://github.com/emitanaka/EDVR-workshop) and can be downloaded [here as a zip file](https://github.com/emitanaka/EDVR-workshop/archive/refs/heads/master.zip) (including the website, slides and exercises).
+
+Once the material is downloaded, open the `docs/index.html` in a browser to see this website ([emitanaka.org/EDVR-workshop](https://emitanaka.org/EDVR-workshop/)). 
+
+
+
+## Schedule
+
+
+## Installation
+
+This is only needed if the exercise links above do not work for you.
+
+```{r}
+#| eval: false
+install.packages(c("remotes", "learnr"))
+remotes::install_github("emitanaka/EDVR-workshop/pkg")
+```
+
+
+## Exercises 
+
+
+To run the exercises locally, install the packages under [Installation](#installation) and then run:
+
+```{r}
+#| eval: false
+learnr::run_tutorial("exercise-01", package = "edvr.workshop")
+learnr::run_tutorial("exercise-02", package = "edvr.workshop")
+```
+

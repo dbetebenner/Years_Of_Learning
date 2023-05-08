@@ -1,0 +1,345 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome to the effective data visualisation with R workshop!\nTuesday 6th December 2022\n 9.00AM - 12.00PM AEDT\n Zoom (links provided to participants via email)"
+  },
+  {
+    "objectID": "about.html#materials",
+    "href": "about.html#materials",
+    "title": "About",
+    "section": "Materials",
+    "text": "Materials\nAll materials are hosted on a GitHub repo here and can be downloaded here as a zip file (including the website, slides and exercises).\nOnce the material is downloaded, open the docs/index.html in a browser to see this website (emitanaka.org/EDVR-workshop)."
+  },
+  {
+    "objectID": "about.html#schedule",
+    "href": "about.html#schedule",
+    "title": "About",
+    "section": "Schedule",
+    "text": "Schedule"
+  },
+  {
+    "objectID": "about.html#installation",
+    "href": "about.html#installation",
+    "title": "About",
+    "section": "Installation",
+    "text": "Installation\nThis is only needed if the exercise links above do not work for you.\n\ninstall.packages(c(\"remotes\", \"learnr\"))\nremotes::install_github(\"emitanaka/EDVR-workshop/pkg\")"
+  },
+  {
+    "objectID": "about.html#exercises",
+    "href": "about.html#exercises",
+    "title": "About",
+    "section": "Exercises",
+    "text": "Exercises\nTo run the exercises locally, install the packages under Installation and then run:\n\nlearnr::run_tutorial(\"exercise-01\", package = \"edvr.workshop\")\nlearnr::run_tutorial(\"exercise-02\", package = \"edvr.workshop\")"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#blurb",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#blurb",
+    "title": "Effective Data Visualization with R",
+    "section": "Blurb",
+    "text": "Blurb\nCounterfactual Explanations explain how inputs into a model need to change for it to produce different outputs. Explanations that involve realistic and actionable changes can be used for the purpose of Algorithmic Recourse: they offer human stakeholders a principled approach to not only understand the model they are seeking to explain, but also react to it or adjust it.\nThe general setup lends itself naturally to Bank datasets that revolve around counterparty risk, for example. In this seminar I will introduce the topic and place it into the broader context of Explainable AI. Using my Julia package I will go through a worked example involving a publicly available credit data set. Finally, I will also briefly present some of our recent research that points to potential pitfalls of current state-of-the-art approaches and proposes mitigation strategies.\nDISCLAIMER: Views presented in this presentation are my own."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#quick-intro",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#quick-intro",
+    "title": "Effective Data Visualization with R",
+    "section": "Quick Intro",
+    "text": "Quick Intro\n\n\n\nCurrently 2nd year of PhD in Trustworthy Artificial Intelligence at Delft University of Technology.\nWorking on Counterfactual Explanations and Probabilistic Machine Learning with applications in Finance.\nPreviously, educational background in Economics and Finance and two years at the Bank of England (MPAT \\(\\subset\\) MIAD).\nEnthusiastic about free open-source software, in particular Julia and Quarto."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#the-problem-with-todays-ai",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#the-problem-with-todays-ai",
+    "title": "Effective Data Visualization with R",
+    "section": "The Problem with Today’s AI",
+    "text": "The Problem with Today’s AI\n\nFrom human to data-driven decision-making …\n\n\n\nBlack-box models like deep neural networks are being deployed virtually everywhere.\nIncludes safety-critical and public domains: health care, autonomous driving, finance, …\nMore likely than not that your loan or employment application is handled by an algorithm.\n\n\n\n\n… where black boxes are recipe for disaster.\n\n\n\nWe have no idea what exactly we’re cooking up …\n\nHave you received an automated rejection email? Why didn’t you “mEet tHe sHoRtLisTiNg cRiTeRia”? 🙃\n\n… but we do know that some of it is junk.\n\n\n\n\n\n\n\nFigure 1: Adversarial attacks on deep neural networks. Source: @goodfellow2014explaining"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai",
+    "title": "Effective Data Visualization with R",
+    "section": "Towards Trustworthy AI",
+    "text": "Towards Trustworthy AI\n\n\nGround Truthing\n\n\nProbabilistic Models\n\n\nCounterfactual Reasoning"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-1",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-1",
+    "title": "Effective Data Visualization with R",
+    "section": "Towards Trustworthy AI",
+    "text": "Towards Trustworthy AI\n\n\nGround Truthing\n\n\nProbabilistic Models\n\n\nCounterfactual Reasoning\n\n\nCurrent Standard in ML\nWe typically want to maximize the likelihood of observing \\(\\mathcal{D}_n\\) under given parameters [@murphy2022probabilistic]:\n\\[\n\\theta^* = \\arg \\max_{\\theta} p(\\mathcal{D}_n|\\theta)\n\\qquad(1)\\]\nCompute an MLE (or MAP) point estimate \\(\\hat\\theta = \\mathbb{E} \\theta^*\\) and use plugin approximation for prediction:\n\\[\np(y|x,\\mathcal{D}_n) \\approx p(y|x,\\hat\\theta)\n\\qquad(2)\\]\n\nIn an ideal world we can just use parsimonious and interpretable models like GLM [@rudin2019stop], for which in many cases we can rely on asymptotic properties of \\(\\theta\\) to quantify uncertainty.\nIn practice these models often have performance limitations.\nBlack-box models like deep neural networks are popular, but they are also the very opposite of parsimonious.\n\nObjective"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-2",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-2",
+    "title": "Effective Data Visualization with R",
+    "section": "Towards Trustworthy AI",
+    "text": "Towards Trustworthy AI\n\n\nGround Truthing\n\n\nProbabilistic Models\n\n\nCounterfactual Reasoning\n\n\nObjective\n. . .\n\n[…] deep neural networks are typically very underspecified by the available data, and […] parameters [therefore] correspond to a diverse variety of compelling explanations for the data. [@wilson2020case]\n\nIn this setting it is often crucial to treat models probabilistically!\n\\[\np(y|x,\\mathcal{D}_n) = \\int p(y|x,\\theta)p(\\theta|\\mathcal{D}_n)d\\theta\n\\qquad(3)\\]"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-3",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-3",
+    "title": "Effective Data Visualization with R",
+    "section": "Towards Trustworthy AI",
+    "text": "Towards Trustworthy AI\n\n\nGround Truthing\n\n\nProbabilistic Models\n\n\nCounterfactual Reasoning\n\n\n\nWe can now make predictions – great! But do we know how the predictions are actually being made?\n\n\nObjective\nWith the model trained for its task, we are interested in understanding how its predictions change in response to input changes.\n\\[\n\\nabla_x p(y|x,\\mathcal{D}_n;\\hat\\theta)\n\\qquad(4)\\]\n\n\nCounterfactual reasoning (in this context) boils down to simple questions: what if \\(x\\) (factual) \\(\\Rightarrow\\) \\(x\\prime\\) (counterfactual)?\nBy strategically perturbing features and checking the model output, we can (begin to) understand how the model makes its decisions.\nCounterfactual Explanations always have full fidelity by construction (as opposed to surrogate explanations, for example).\n\n\n. . .\n\nImportant to realize that we are keeping \\(\\hat\\theta\\) constant!"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#todays-talk",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#todays-talk",
+    "title": "Effective Data Visualization with R",
+    "section": "Today’s talk",
+    "text": "Today’s talk\n\n🔮 Explaining Black-Box Models through Counterfactuals (\\(\\approx\\) 10min)\n\nWhat are they? What are they not?\nCounterfactual Explanations in the broader XAI landscape\nFrom Counterfactual Explanations to Algorithmic Recourse\n\n🛠️ Hands-on examples — CounterfactualExplanations.jl in Julia (\\(\\approx\\) 15min)\n📊 Endogenous Macrodynamics in Algorithmic Recourse (\\(\\approx\\) 10min)\n❓ Q&A (\\(\\approx\\) 10min)\n🚀 Related Research Topics (\\(\\approx\\) 10min)\n\nPredictive Uncertainty Quantification"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-framework-for-counterfactual-explanations",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-framework-for-counterfactual-explanations",
+    "title": "Effective Data Visualization with R",
+    "section": "A Framework for Counterfactual Explanations",
+    "text": "A Framework for Counterfactual Explanations\n\nEven though […] interpretability is of great importance and should be pursued, explanations can, in principle, be offered without opening the “black box”. [@wachter2017counterfactual]\n\n\n\nFramework\n. . .\nObjective originally proposed by @wachter2017counterfactual is as follows\n\\[\n\\min_{x\\prime \\in \\mathcal{X}} h(x\\prime) \\ \\ \\ \\mbox{s. t.} \\ \\ \\ M(x\\prime) = t\n\\qquad(5)\\]\nwhere \\(h\\) relates to the complexity of the counterfactual and \\(M\\) denotes the classifier.\n. . .\nTypically this is approximated through regularization:\n\\[\nx\\prime = \\arg \\min_{x\\prime}  \\ell(M(x\\prime),t) + \\lambda h(x\\prime)\n\\qquad(6)\\]\n\nIntuition\n. . .\n\n\n\nFigure 2: A cat performing gradient descent in the feature space à la @wachter2017counterfactual."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactuals-as-in-adversarial-examples",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactuals-as-in-adversarial-examples",
+    "title": "Effective Data Visualization with R",
+    "section": "Counterfactuals … as in Adversarial Examples?",
+    "text": "Counterfactuals … as in Adversarial Examples?\n\n\n\nYes and no!\n\nWhile both are methodologically very similar, adversarial examples are meant to go undetected while CEs ought to be meaningful.\n\n\nDesiderata\n\n\ncloseness: the average distance between factual and counterfactual features should be small (@wachter2017counterfactual)\nactionability: the proposed feature perturbation should actually be actionable (@ustun2019actionable, @poyiadzi2020face)\nplausibility: the counterfactual explanation should be plausible to a human (@joshi2019realistic)\nunambiguity: a human should have no trouble assigning a label to the counterfactual (@schut2021generating)\nsparsity: the counterfactual explanation should involve as few individual feature changes as possible (@schut2021generating)\nrobustness: the counterfactual explanation should be robust to domain and model shifts (@upadhyay2021robust)\ndiversity: ideally multiple diverse counterfactual explanations should be provided (@mothilal2020explaining)\ncausality: counterfactual explanations reflect the structural causal model underlying the data generating process (@karimi2020algorithmic, @karimi2021algorithmic)"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactuals-as-in-causal-inference",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactuals-as-in-causal-inference",
+    "title": "Effective Data Visualization with R",
+    "section": "Counterfactuals … as in Causal Inference?",
+    "text": "Counterfactuals … as in Causal Inference?\n\nNO!\n\n\n\nCausal inference: counterfactuals are thought of as unobserved states of the world that we would like to observe in order to establish causality.\n\nThe only way to do this is by actually interfering with the state of the world: \\(p(y|do(x),\\theta)\\).\nIn practice we can only move some individuals to the counterfactual state of the world and compare their outcomes to a control group.\nProvided we have controlled for confounders, properly randomized, … we can estimate an average treatment effect: \\(\\hat\\theta\\).\n\nCounterfactual Explanations: involves perturbing features after some model has been trained.\n\nWe end up comparing modeled outcomes \\(p(y|x,\\hat\\phi)\\) and \\(p(y|x\\prime,\\hat\\phi)\\) for individuals.\nWe have not magically solved causality.\n\n\n\n\nThe number of ostensibly pro data scientists confusing themselves into believing that \"counterfactual explanations\" capture real-world causality is just staggering🤦‍♀️. Where do we go from here? How can a community that doesn't even understand what's already known make advances?\n\n— Zachary Lipton (@zacharylipton) June 20, 2022"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#from-counterfactual-explanations-to-algorithmic-recourse",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#from-counterfactual-explanations-to-algorithmic-recourse",
+    "title": "Effective Data Visualization with R",
+    "section": "From Counterfactual Explanations to Algorithmic Recourse",
+    "text": "From Counterfactual Explanations to Algorithmic Recourse\n\n\n\n“You cannot appeal to (algorithms). They do not listen. Nor do they bend.”\n— Cathy O’Neil in Weapons of Math Destruction, 2016\n\n\n\n\nFigure 3: Cathy O’Neil. Source: Cathy O’Neil a.k.a. mathbabe.\n\n\n\nAlgorithmic Recourse\n. . .\n\n@oneil2016weapons points to various real-world involving black-box models and affected individuals facing adverse outcomes.\n\n. . .\n\nThese individuals generally have no way to challenge their outcome.\n\n. . .\n\nCounterfactual Explanations that involve actionable and realistic feature perturbations can be used for the purpose of Algorithmic Recourse."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactualexplanations.jl",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactualexplanations.jl",
+    "title": "Effective Data Visualization with R",
+    "section": "CounterfactualExplanations.jl 📦",
+    "text": "CounterfactualExplanations.jl 📦\n     \n\n\n\n\nA unifying framework for generating Counterfactual Explanations.\nFast, extensible and composable allowing users and developers to add and combine different counterfactual generators.\nImplements a number of SOTA generators.\nBuilt in Julia, but can be used to explain models built in R and Python (still experimental).\nStatus 🔁: ready for research, not production. Thought/challenge/contributions welcome!\n\n\n\n\n\n\nPhoto by Denise Jans on Unsplash.\n\n\n\n\n\n\nJulia has an edge with respect to Trustworthy AI: it’s open-source, uniquely transparent and interoperable 🔴🟢🟣"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-simple-example",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-simple-example",
+    "title": "Effective Data Visualization with R",
+    "section": "A simple example",
+    "text": "A simple example\n\n\n\nLoad and prepare some toy data.\nSelect a random sample.\nGenerate counterfactuals using different approaches."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#generic-generator",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#generic-generator",
+    "title": "Effective Data Visualization with R",
+    "section": "Generic Generator",
+    "text": "Generic Generator\n\n\nCode\n. . .\nWe begin by instantiating the fitted model …\n. . .\n… then based on its prediction for \\(x\\) we choose the opposite label as our target …\n. . .\n… and finally generate the counterfactual.\n\nOutput\n. . .\n\n… et voilà!"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#probabilistic-methods-for-counterfactual-explanations",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#probabilistic-methods-for-counterfactual-explanations",
+    "title": "Effective Data Visualization with R",
+    "section": "Probabilistic Methods for Counterfactual Explanations",
+    "text": "Probabilistic Methods for Counterfactual Explanations\nWhen people say that counterfactuals should look realistic or plausible, they really mean that counterfactuals should be generated by the same Data Generating Process (DGP) as the factuals:\n\\[\nx\\prime \\sim p(x)\n\\]\nBut how do we estimate \\(p(x)\\)? Two probabilistic approaches …\n\n\nAPPROACH 1: use the model itselfAPPROACH 2: use some generative model\n\n\n\n\n@schut2021generating note that by maximizing predictive probabilities \\(\\sigma(M(x\\prime))\\) for probabilistic models \\(M\\in\\mathcal{\\widetilde{M}}\\) one implicitly minimizes epistemic and aleotoric uncertainty.\n\\[\nx\\prime = \\arg \\min_{x\\prime}  \\ell(M(x\\prime),t) \\ \\ \\ , \\ \\ \\ M\\in\\mathcal{\\widetilde{M}}\n\\qquad(7)\\]\n\n\n\n\nFigure 4: A cat performing gradient descent in the feature space à la @schut2021generating\n\n\n\n\n\n\n\n\nInstead of perturbing samples directly, some have proposed to instead traverse a lower-dimensional latent embedding learned through a generative model [@joshi2019realistic].\n\\[\nz\\prime = \\arg \\min_{z\\prime}  \\ell(M(dec(z\\prime)),t) + \\lambda h(x\\prime)\n\\qquad(8)\\]\nand\n\\[x\\prime = dec(z\\prime)\\]\nwhere \\(dec(\\cdot)\\) is the decoder function.\n\n\n\n\nFigure 5: Counterfactual (yellow) generated through latent space search (right panel) following @joshi2019realistic. The corresponding counterfactual path in the feature space is shown in the left panel."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#greedy-generator",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#greedy-generator",
+    "title": "Effective Data Visualization with R",
+    "section": "Greedy Generator",
+    "text": "Greedy Generator\n\n\nCode\n. . .\nThis time we use a Bayesian classifier …\n. . .\n… and once again choose our target label as before …\n. . .\n… to then finally use greedy search to find a counterfactual.\n\nOutput\n. . .\n\nIn this case the Bayesian approach yields a similar outcome."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#latent-space-generator",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#latent-space-generator",
+    "title": "Effective Data Visualization with R",
+    "section": "Latent Space Generator",
+    "text": "Latent Space Generator\n\n\nCode\n. . .\nUsing the same classifier as before we can either use the specific REVISEGenerator …\n. . .\n… or realize that that REVISE [@joshi2019realistic] just boils down to generic search in a latent space:\n\nOutput\n. . .\n\nWe have essentially combined latent search with a probabilistic classifier (as in @antoran2020getting)."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#diverse-counterfactuals",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#diverse-counterfactuals",
+    "title": "Effective Data Visualization with R",
+    "section": "Diverse Counterfactuals",
+    "text": "Diverse Counterfactuals\n\n\nCode\n. . .\nWe can use the DiCEGenerator to produce multiple diverse counterfactuals:\n\nOutput\n. . ."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-real-world-example---credit-default",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-real-world-example---credit-default",
+    "title": "Effective Data Visualization with R",
+    "section": "A Real-World Example - Credit Default",
+    "text": "A Real-World Example - Credit Default\n\nThe Give Me Some Credit dataset is publicly available from Kaggle.\n\n\nImprove on the state of the art in credit scoring by predicting the probability that somebody will experience financial distress in the next two years.\n\n\nWe have \\(y \\in \\{0=\\text{no stress},1=\\text{stress}\\}\\) and a number of demographic and credit-related features \\(X\\)."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#ignoring-mutability",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#ignoring-mutability",
+    "title": "Effective Data Visualization with R",
+    "section": "Ignoring Mutability",
+    "text": "Ignoring Mutability\nUsing DiCE to generate counterfactuals for a single individual, ignoring actionability:"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#respecting-mutability",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#respecting-mutability",
+    "title": "Effective Data Visualization with R",
+    "section": "Respecting Mutability",
+    "text": "Respecting Mutability\nUsing the generic generator to generate counterfactuals for multiple individuals, respecting that age cannot be decreased (you might argue that age also cannot be easily increased …):"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#motivation",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#motivation",
+    "title": "Effective Data Visualization with R",
+    "section": "Motivation",
+    "text": "Motivation\n\n\n\nTL;DR: We find that standard implementation of various SOTA approaches to AR can induce substantial domain and model shifts. We argue that these dynamics indicate that individual recourse generates hidden external costs and provide mitigation strategies.\n\nIn this work we investigate what happens if Algorithmic Recourse is actually implemented by a large number of individuals.\nFigure 6 illustrates what we mean by Endogenous Macrodynamics in Algorithmic Recourse:\n\nPanel (a): we have a simple linear classifier trained for binary classification where samples from the negative class (y=0) are marked in blue and samples of the positive class (y=1) are marked in orange\nPanel (b): the implementation of AR for a random subset of individuals leads to a noticable domain shift\nPanel (c): as the classifier is retrained we observe a corresponding model shift [@upadhyay2021robust]\nPanel (d): as this process is repeated, the decision boundary moves away from the target class.\n\n\n\n\n\nFigure 6: Proof of concept: repeated implementation of AR leads to domain and model shifts.\n\n\n\nWe argue that these shifts should be considered as an expected external cost of individual recourse and call for a paradigm shift from individual to collective recourse in these types of situations."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#generalised-framework",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#generalised-framework",
+    "title": "Effective Data Visualization with R",
+    "section": "Generalised Framework",
+    "text": "Generalised Framework\nFrom individual recourse …\nWe restate Equation 6 to encapsulate latent space search:\n\\[\n\\begin{aligned}\n\\mathbf{s}^\\prime &= \\arg \\min_{\\mathbf{s}^\\prime \\in \\mathcal{S}} \\left\\{  {\\text{yloss}(M(f(\\mathbf{s}^\\prime)),y^*)}+ \\lambda {\\text{cost}(f(\\mathbf{s}^\\prime)) }  \\right\\}\n\\end{aligned}\n\\qquad(9)\\]\n… towards collective recourse\nWe borrow the notion of negative externalities from Economics, to formalise the idea that individual recourse fails to account for external costs:\n\\[\n\\begin{aligned}\n\\mathbf{s}^\\prime &= \\arg \\min_{\\mathbf{s}^\\prime \\in \\mathcal{S}} \\{ {\\text{yloss}(M(f(\\mathbf{s}^\\prime)),y^*)} \\\\ &+ \\lambda_1 {\\text{cost}(f(\\mathbf{s}^\\prime))} + \\lambda_2 {\\text{extcost}(f(\\mathbf{s}^\\prime))} \\}\n\\end{aligned}\n\\qquad(10)\\]"
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#findings",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#findings",
+    "title": "Effective Data Visualization with R",
+    "section": "Findings",
+    "text": "Findings\n\n\n\n\n\nResults for synthetic data.\n\n\n\n\n\n\nResults for real-word data."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#mitigation-strategies",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#mitigation-strategies",
+    "title": "Effective Data Visualization with R",
+    "section": "Mitigation Strategies",
+    "text": "Mitigation Strategies\n\n\n\nChoose more conservative decision thresholds.\nClassifer Preserving ROAR (ClaPROAR): penalise classifier loss.\n\n\\[\n\\begin{aligned}\n\\text{extcost}(f(\\mathbf{s}^\\prime)) = l(M(f(\\mathbf{s}^\\prime)),y^\\prime)\n\\end{aligned}\n\\qquad(11)\\]\n\nGravitational Counterfactual Explanations: penalise distance to some sensible point in the target domain.\n\n\\[\n\\begin{aligned}\n\\text{extcost}(f(\\mathbf{s}^\\prime)) = \\text{dist}(f(\\mathbf{s}^\\prime),\\bar{x})  \n\\end{aligned}\n\\qquad(12)\\]\n\n\n\n\nFigure 7: Illustrative example demonstrating the properties of the various mitigation strategies. Samples from the negative class \\((y = 0)\\) are marked in blue while samples of the positive class \\((y = 1)\\) are marked in orange.\n\n\n\n\n\n\n\n\n\nMitigation strategies applied to synthetic data.\n\n\n\n\n\n\nMitigation strategies applied to real-world data."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#effortless-bayesian-deep-learning-through-laplace-redux",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#effortless-bayesian-deep-learning-through-laplace-redux",
+    "title": "Effective Data Visualization with R",
+    "section": "Effortless Bayesian Deep Learning through Laplace Redux",
+    "text": "Effortless Bayesian Deep Learning through Laplace Redux\n   \n\n\nLaplaceRedux.jl (formerly BayesLaplace.jl) is a small package that can be used for effortless Bayesian Deep Learning and Logistic Regression trough Laplace Approximation. It is inspired by this Python library and its companion paper.\n\n\n\nPlugin Approximation (left) and Laplace Posterior (right) for simple artificial neural network.\n\n\n\n\n\n\nSimulation of changing posteriour predictive distribution. Image by author."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#conformalprediction.jl",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#conformalprediction.jl",
+    "title": "Effective Data Visualization with R",
+    "section": "ConformalPrediction.jl",
+    "text": "ConformalPrediction.jl\n      \nConformalPrediction.jl is a package for Uncertainty Quantification (UQ) through Conformal Prediction (CP) in Julia. It is designed to work with supervised models trained in MLJ [@blaom2020mlj]. Conformal Prediction is distribution-free, easy-to-understand, easy-to-use and model-agnostic.\n\n\n\nConformal Prediction in action: Prediction sets for two different samples and changing coverage rates. As coverage grows, so does the size of the prediction sets."
+  },
+  {
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#more-resources",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#more-resources",
+    "title": "Effective Data Visualization with R",
+    "section": "More Resources 📚",
+    "text": "More Resources 📚\n\n\n\nRead on …\n\n\nBlog post introducing CE: [TDS], [blog].\nBlog post on Laplace Redux: [TDS], [blog].\nBlog post on Conformal Prediction: [TDS], [blog].\n\n\n… or get involved! 🤗\n\n\nContributor’s Guide for CounterfactualExplanations.jl\nContributor’s Guide for ConformalPrediction.jl"
+  },
+  {
+    "objectID": "documents.html",
+    "href": "documents.html",
+    "title": "Documents",
+    "section": "",
+    "text": "In this 3 hour tutorial, I will demonstrate some cognitive principles and apply methods supported by empirical studies that make data visualisation more effective. The construction of data visualisation will be accompanied with R code using the ggplot2 package. The R code and data used will be provided so participants can fully replicate the presented data visualisations.\nParticipants are expected to know how to use R. Some knowledge in tidyverse would be beneficial. You can find an interactive introduction to data analysis with R at https://learnr.numbat.space/."
+  },
+  {
+    "objectID": "documents.html#biography-of-workshop-presenter",
+    "href": "documents.html#biography-of-workshop-presenter",
+    "title": "Documents",
+    "section": "Biography of Workshop Presenter",
+    "text": "Biography of Workshop Presenter\nDr. Emi Tanaka is a Senior Lecturer in Statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area includes data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter’s Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops."
+  },
+  {
+    "objectID": "documents.html#lorum-ipsum",
+    "href": "documents.html#lorum-ipsum",
+    "title": "Documents",
+    "section": "Lorum Ipsum",
+    "text": "Lorum Ipsum\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Index",
+    "section": "",
+    "text": "Welcome to the effective data visualisation with R workshop!\nTuesday 6th December 2022\n 9.00AM - 12.00PM AEDT\n Zoom (links provided to participants via email)"
+  },
+  {
+    "objectID": "index.html#materials",
+    "href": "index.html#materials",
+    "title": "Index",
+    "section": "Materials",
+    "text": "Materials\nAll materials are hosted on a GitHub repo here and can be downloaded here as a zip file (including the website, slides and exercises).\nOnce the material is downloaded, open the docs/index.html in a browser to see this website (emitanaka.org/EDVR-workshop)."
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Index",
+    "section": "Schedule",
+    "text": "Schedule"
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "Index",
+    "section": "Installation",
+    "text": "Installation\nThis is only needed if the exercise links above do not work for you.\n\ninstall.packages(c(\"remotes\", \"learnr\"))\nremotes::install_github(\"emitanaka/EDVR-workshop/pkg\")"
+  },
+  {
+    "objectID": "index.html#exercises",
+    "href": "index.html#exercises",
+    "title": "Index",
+    "section": "Exercises",
+    "text": "Exercises\nTo run the exercises locally, install the packages under Installation and then run:\n\nlearnr::run_tutorial(\"exercise-01\", package = \"edvr.workshop\")\nlearnr::run_tutorial(\"exercise-02\", package = \"edvr.workshop\")"
+  },
+  {
+    "objectID": "index.html#datagreyar",
+    "href": "index.html#datagreyar",
+    "title": "Index",
+    "section": "Datagreyar",
+    "text": "Datagreyar\n\nrequire(datalegreyar)\n\nLoading required package: datalegreyar\n\nvalues &lt;- 4 + 2 * 1:20\nfig(datafy(values, \"years of learning\", ignore_space=F), size=70, xlabs=c(\"sept\", \"june\"), symbol=setNames(c(4,5,7,10), c(\"up\", \"up\", \"up\", \"up\")))\n\n{sept }§0y|0e|0a|1r|1[+]s|1[+] |1o|1[+]f|2 |2l|2[+]e|2a|2r|2n|3i|3n|3g|3{june }\n\n\n\nfig(datafy(values, \"datalegreya\"), size=80)\n\n§0d|0a|0t|1a|1l|1e|2g|2r|2e|3y|3a|3\n\n\n\nfig(datafy(values, \"datalegreya\"), size=80, xlabs=c(\"data\", \"text\"))\n\n{data }§0d|0a|0t|1a|1l|1e|2g|2r|2e|3y|3a|3{text }\n\n\n\nfig(datafy(values, \"fig is great\", ignore_space=F), size=80)\n\n§0f|0i|0g|1 |1i|1s|2 |2g|2r|2e|3a|3t|3"
+  },
+  {
+    "objectID": "index.html#lorum-ipsum",
+    "href": "index.html#lorum-ipsum",
+    "title": "Index",
+    "section": "Lorum Ipsum",
+    "text": "Lorum Ipsum\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
+    "section": "",
+    "text": "License\nThis is a human-readable summary of (and not a substitute for) the license. Please see https://creativecommons.org/licenses/by-sa/4.0/legalcode for the full legal text.\nThis work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).\nYou are free to:\n\nShare—copy and redistribute the material in any medium or format\nAdapt—remix, transform, and build upon the material for any purpose, even commercially.\n\nThe licensor cannot revoke these freedoms as long as you follow the license terms.\nUnder the following terms:\n\nAttribution—You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.\nShareAlike—If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.\n\nNo additional restrictions—You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.\nNotices:\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material."
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "In this 3 hour tutorial, I will demonstrate some cognitive principles and apply methods supported by empirical studies that make data visualisation more effective. The construction of data visualisation will be accompanied with R code using the ggplot2 package. The R code and data used will be provided so participants can fully replicate the presented data visualisations.\nParticipants are expected to know how to use R. Some knowledge in tidyverse would be beneficial. You can find an interactive introduction to data analysis with R at https://learnr.numbat.space/."
+  },
+  {
+    "objectID": "news.html#biography-of-workshop-presenter",
+    "href": "news.html#biography-of-workshop-presenter",
+    "title": "News",
+    "section": "Biography of Workshop Presenter",
+    "text": "Biography of Workshop Presenter\nDr. Emi Tanaka is a Senior Lecturer in Statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area includes data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter’s Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops."
+  },
+  {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "In this 3 hour tutorial, I will demonstrate some cognitive principles and apply methods supported by empirical studies that make data visualisation more effective. The construction of data visualisation will be accompanied with R code using the ggplot2 package. The R code and data used will be provided so participants can fully replicate the presented data visualisations.\nParticipants are expected to know how to use R. Some knowledge in tidyverse would be beneficial. You can find an interactive introduction to data analysis with R at https://learnr.numbat.space/."
+  },
+  {
+    "objectID": "presentations.html#biography-of-workshop-presenter",
+    "href": "presentations.html#biography-of-workshop-presenter",
+    "title": "Presentations",
+    "section": "Biography of Workshop Presenter",
+    "text": "Biography of Workshop Presenter\nDr. Emi Tanaka is a Senior Lecturer in Statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area includes data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter’s Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops."
+  }
+]
