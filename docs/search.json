@@ -35,18 +35,11 @@
     "text": "Exercises\nTo run the exercises locally, install the packages under Installation and then run:\n\nlearnr::run_tutorial(\"exercise-01\", package = \"edvr.workshop\")\nlearnr::run_tutorial(\"exercise-02\", package = \"edvr.workshop\")"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#blurb",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#blurb",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#my-approach",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#my-approach",
     "title": "Effective Data Visualization with R",
-    "section": "Blurb",
-    "text": "Blurb\nCounterfactual Explanations explain how inputs into a model need to change for it to produce different outputs. Explanations that involve realistic and actionable changes can be used for the purpose of Algorithmic Recourse: they offer human stakeholders a principled approach to not only understand the model they are seeking to explain, but also react to it or adjust it.\nThe general setup lends itself naturally to Bank datasets that revolve around counterparty risk, for example. In this seminar I will introduce the topic and place it into the broader context of Explainable AI. Using my Julia package I will go through a worked example involving a publicly available credit data set. Finally, I will also briefly present some of our recent research that points to potential pitfalls of current state-of-the-art approaches and proposes mitigation strategies.\nDISCLAIMER: Views presented in this presentation are my own."
-  },
-  {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#quick-intro",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#quick-intro",
-    "title": "Effective Data Visualization with R",
-    "section": "Quick Intro",
-    "text": "Quick Intro\n\n\n\nCurrently 2nd year of PhD in Trustworthy Artificial Intelligence at Delft University of Technology.\nWorking on Counterfactual Explanations and Probabilistic Machine Learning with applications in Finance.\nPreviously, educational background in Economics and Finance and two years at the Bank of England (MPAT \\(\\subset\\) MIAD).\nEnthusiastic about free open-source software, in particular Julia and Quarto."
+    "section": "My Approach",
+    "text": "My Approach\n\n\n\n\nCurrently 2nd year of PhD in Trustworthy Artificial Intelligence at Delft University of Technology.\nWorking on Counterfactual Explanations and Probabilistic Machine Learning with applications in Finance.\nPreviously, educational background in Economics and Finance and two years at the Bank of England (MPAT \\(\\subset\\) MIAD).\nEnthusiastic about free open-source software, in particular Julia and Quarto."
   },
   {
     "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#the-problem-with-todays-ai",

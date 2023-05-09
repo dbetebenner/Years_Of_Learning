@@ -20,7 +20,7 @@ website:
   navbar:
     title: "Years of Learning"
     logo: images/cfa_logo_grey.png
-    logo-href: "https://centerforassessment.github.io/"
+    logo-href: "https://dbetebenner.github.io/Years_of_Learning/"
     search: false
     pinned: true
     foreground: "#7c7c7c"
@@ -36,7 +36,7 @@ website:
         href: https://github.com/dbetebenner/Years_of_Learning
       - icon: twitter
         aria-label: twitter
-        href: https://twitter.com/dbetebenner
+        href: https://twitter.com/nciea1
 
   search:
     location: navbar
@@ -46,10 +46,13 @@ website:
   #footer
   page-footer:
     center:
-      - text: About
-        href: about.qmd
+      - icon: twitter
+        aria-label: twitter
+        href: https://twitter.com/nciea1
+      - icon: info-circle-fill
+        aria-label: info-circle-fill
+        href: https://twitter.com/nciea1
       - icon: github
-        text: GitHub
         aria-label: github
         href: https://https://github.com/dbetebenner/Years_of_Learning
 
@@ -67,7 +70,7 @@ format:
     css: css/styles.css
     toc: true
     include-after: |
-      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
       <script type="text/javascript" src="js/scroll.js"></script>
