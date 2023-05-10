@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Effective Data Visualization with R - Index</title>
+<title>Years of Learning - Index</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -92,14 +92,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-submit-button-title": "Submit"
   }
 }</script>
-<link href="site_libs/datalegreya-1.0/datalegreya.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="css/styles.css">
-<meta property="og:title" content="Effective Data Visualization with R - Index">
+<meta property="og:title" content="Years of Learning - Index">
 <meta property="og:description" content="">
-<meta property="og:site-name" content="Effective Data Visualization with R">
-<meta name="twitter:title" content="Effective Data Visualization with R - Index">
+<meta property="og:site-name" content="Years of Learning">
+<meta name="twitter:title" content="Years of Learning - Index">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="@dbetebenner">
 <meta name="twitter:site" content="@nciea1">
@@ -168,7 +167,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#schedule" id="toc-schedule" class="nav-link" data-scroll-target="#schedule">Schedule</a></li>
   <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
   <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
-  <li><a href="#datagreyar" id="toc-datagreyar" class="nav-link" data-scroll-target="#datagreyar">Datagreyar</a></li>
   <li><a href="#lorum-ipsum" id="toc-lorum-ipsum" class="nav-link" data-scroll-target="#lorum-ipsum">Lorum Ipsum</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/dbetebenner/Years_of_Learning/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/dbetebenner/Years_of_Learning/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
@@ -219,38 +217,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(<span class="st">"exercise-01"</span>, <span class="at">package =</span> <span class="st">"edvr.workshop"</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>learnr<span class="sc">::</span><span class="fu">run_tutorial</span>(<span class="st">"exercise-02"</span>, <span class="at">package =</span> <span class="st">"edvr.workshop"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="datagreyar" class="level2">
-<h2 class="anchored" data-anchor-id="datagreyar">Datagreyar</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">require</span>(datalegreyar)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: datalegreyar</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>values <span class="ot">&lt;-</span> <span class="dv">4</span> <span class="sc">+</span> <span class="dv">2</span> <span class="sc">*</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fig</span>(<span class="fu">datafy</span>(values, <span class="st">"years of learning"</span>, <span class="at">ignore_space=</span>F), <span class="at">size=</span><span class="dv">70</span>, <span class="at">xlabs=</span><span class="fu">c</span>(<span class="st">"sept"</span>, <span class="st">"june"</span>), <span class="at">symbol=</span><span class="fu">setNames</span>(<span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">10</span>), <span class="fu">c</span>(<span class="st">"up"</span>, <span class="st">"up"</span>, <span class="st">"up"</span>, <span class="st">"up"</span>)))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<span class="figsdot" style=" font-size:70pt;">{sept }§0y|0e|0a|1r|1[+]s|1[+] |1o|1[+]f|2 |2l|2[+]e|2a|2r|2n|3i|3n|3g|3{june }</span>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fig</span>(<span class="fu">datafy</span>(values, <span class="st">"datalegreya"</span>), <span class="at">size=</span><span class="dv">80</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<span class="figsdot" style=" font-size:80pt;">§0d|0a|0t|1a|1l|1e|2g|2r|2e|3y|3a|3</span>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fig</span>(<span class="fu">datafy</span>(values, <span class="st">"datalegreya"</span>), <span class="at">size=</span><span class="dv">80</span>, <span class="at">xlabs=</span><span class="fu">c</span>(<span class="st">"data"</span>, <span class="st">"text"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<span class="figsdot" style=" font-size:80pt;">{data }§0d|0a|0t|1a|1l|1e|2g|2r|2e|3y|3a|3{text }</span>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fig</span>(<span class="fu">datafy</span>(values, <span class="st">"fig is great"</span>, <span class="at">ignore_space=</span>F), <span class="at">size=</span><span class="dv">80</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<span class="figsdot" style=" font-size:80pt;">§0f|0i|0g|1 |1i|1s|2 |2g|2r|2e|3a|3t|3</span>
-</div>
 </div>
 </section>
 <section id="lorum-ipsum" class="level2">
@@ -503,14 +469,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/nciea1">
-      <i class="bi bi-twitter" role="img" aria-label="twitter">
+    <a class="nav-link" href="./about.html">
+      <i class="bi bi-info-circle-fill" role="img" aria-label="info-circle-fill">
 </i> 
     </a>
   </li>  
     <li class="nav-item compact">
     <a class="nav-link" href="https://twitter.com/nciea1">
-      <i class="bi bi-info-circle-fill" role="img" aria-label="info-circle-fill">
+      <i class="bi bi-twitter" role="img" aria-label="twitter">
 </i> 
     </a>
   </li>  
@@ -527,7 +493,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<link href="https://fonts.googleapis.com/css2?family=Fasthand&amp;family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fasthand&amp;family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&amp;family=Yanone+Kaffeesatz:wght@200;300;400;500;600&amp;display=swap" rel="stylesheet">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.sticky-kit.min.js"></script>
 <script type="text/javascript" src="js/scroll.js"></script>

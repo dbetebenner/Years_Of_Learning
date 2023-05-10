@@ -6,17 +6,17 @@ format:
     logo: images/cfa_logo_full_color.png
     width: 1600
     height: 900
-    scrollable: true
     preview-links: auto
-    slide-number: c/t
-    transition: slide
+    scrollable: false
+    slide-number: true
+    show-slide-number: all
+    multiplex: true
+    controls: true
     background-transition: fade
     fig-align: center
+    navigation-mode: vertical
     theme: [simple, css/style.scss]
 draft: false
-execute: 
-  eval: false
-  echo: false
 ---
 
 # {background-image=images/apples_by_the_bushel.jpg background-size="cover" background-position="left" background-color="black" background-opacity=0.6}
@@ -24,7 +24,12 @@ execute:
 ```{r setup, include=FALSE}
 library(fontawesome)
 library(quarto)
+library(datalegreyar)
 ```
+
+::::{.columns}
+
+:::{.column width="50%"}
 
 <h1>Years of Learning</h1>
 
@@ -36,7 +41,9 @@ library(quarto)
 
 <h4>May 23rd, 2023</h4>
 
-::: {style="text-align: right; vertical-align: bottom; font-family: 'News Cycle'; font-size: 68px; font-style: italic"}
+:::
+
+:::{.column width="50%" style="text-align: right; font-size: 68px; font-style: italic"}
 
 Apples by the bushel,
 
@@ -44,12 +51,35 @@ learning by the year.
 
 :::
 
+::::
 
-# Rolls off the tongue
+#
+
+<center>
+
+```{r, echo=FALSE}
+values <- 4 + 2 * 1:20
+fig(datafy(values, "years of learning", ignore_space=F), size=130, xlabs=c("sept", "june"), 
+  symbol=setNames(c(4,5,7,10), c("up", "up", "up", "up")), type="gradient", color="magenta")
+```
+
+</center>
+
+:::{.incremental}
+
+- The phrase rolls of one's tongue.
+- The phrase suggests something commonsense that all understand. 
+- On grade level is to attainment as A year's worth of learning is to growth.
+- The phrase conceals significant technical and conceptual issues. 
+
+:::
+
+::: {.notes}
+The phrase a "year's worth of learning" has been used since I began running growth analyses over 15 years ago.
+:::
 
 
-
-# Inspiration 
+## Inspiration 
 
 ::::{.columns}
 
@@ -78,7 +108,7 @@ learning by the year.
 
 
 
-## My Approach 
+## Personal Perspectives/Biases {background-image=images/bias.jpg background-size="cover" background-position="right" background-color="black" background-opacity=0.4}
 
 ::::{.columns}
 
@@ -86,50 +116,16 @@ learning by the year.
 
 :::{.incremental}
 
-- Currently 2nd year of PhD in Trustworthy Artificial Intelligence at Delft University of Technology.
-- Working on Counterfactual Explanations and Probabilistic Machine Learning with applications in Finance.
-- Previously, educational background in Economics and Finance and two years at the Bank of England (MPAT $\subset$ MIAD).
-- Enthusiastic about free open-source software, in particular Julia and Quarto. 
+- Working with non-technical audiences requires trade-offs.
+- The best solution from a technical perspective may be a failure from a practical perspective.
+- Utility trumps validity.
+- Are the shortcomings of "year's of learning" so large as to make the phrase damaging. 
 
 :::
 
-:::
-
-:::{.column width="40%"}
-
-<img src="images/cfa_logo_color.png" height="auto" width="250" style="border-radius:50%; display: block; margin-left: auto; margin-right: auto;">
-
-<div style="text-align: center;">
-  <p style="display: inline; vertical-align: middle"> 
-    <a href="https://www.linkedin.com/in/patrick-altmeyer-a2a25494/" style="display: inline-block; color: rgb(207, 142, 255) !important;">
-      <font style="">
-        <img width="60" height="60" src="https://s1g.s3.amazonaws.com/d0fc399dee4218d1e0e0399b8947acab.png" alt="LinkedIn (Personal)" style="border: none; max-width: 100%; height: 60px !important;">
-      </font>
-    </a>
-    <a href="https://twitter.com/paltmey" style="display: inline-block; color: rgb(207, 142, 255) !important;">
-      <font style="">
-        <img width="60" height="60" src="https://s1g.s3.amazonaws.com/3949237f892004c237021ac9e3182b1d.png" alt="Twitter" style="border: none; max-width: 100%; height: 60px !important;">
-      </font>
-    </a>
-    <a href="https://github.com/pat-alt" style="display: inline-block; color: rgb(207, 142, 255) !important;">
-      <font style="">
-        <img width="60" height="60" src="https://s1g.s3.amazonaws.com/47f4eb2d0082a8a3611d614b75a09db8.png" alt="Github" style="border: none; max-width: 100%; height: 60px !important;">
-      </font>
-    </a>
-    <a href="https://medium.com/@patrick.altmeyer" style="display: inline-block; color: rgb(207, 142, 255) !important;">
-      <font style="">
-        <img width="60" height="60" src="https://s1g.s3.amazonaws.com/175f49662614345cb7dbb95fce3f88af.png" alt="Medium" style="border: none; max-width: 100%; height: 60px !important;">
-      </font>
-    </a>
-  </p>
-</div>
-
-<img src="images/cfa_logo_color.png" height="auto" width="100" style="display: block; margin-left: auto; margin-right: auto;">
 :::
 
 ::::
-
-
 
 
 # {background-image="images/william_butler_yeats.jpg" background-size="cover" background-position="right"}

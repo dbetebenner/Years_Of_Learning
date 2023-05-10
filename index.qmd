@@ -42,27 +42,6 @@ learnr::run_tutorial("exercise-01", package = "edvr.workshop")
 learnr::run_tutorial("exercise-02", package = "edvr.workshop")
 ```
 
-## Datagreyar
-
-```{r}
-require(datalegreyar)
-values <- 4 + 2 * 1:20
-fig(datafy(values, "years of learning", ignore_space=F), size=70, xlabs=c("sept", "june"), symbol=setNames(c(4,5,7,10), c("up", "up", "up", "up")))
-```
-
-
-```{r}
-fig(datafy(values, "datalegreya"), size=80)
-```
-
-```{r}
-fig(datafy(values, "datalegreya"), size=80, xlabs=c("data", "text"))
-```
-
-```{r}
-fig(datafy(values, "fig is great", ignore_space=F), size=80)
-```
-
 ## Lorum Ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 

@@ -94,6 +94,19 @@ $headings-font-weight:  500 !default;
     transition: all 0.35s ease-in-out;
   }
 
+ .bi-info-circle-fill {
+   font-size: 28px;
+   color: #7c7c7c;
+   -webkit-text-stroke-width: 0px;
+   -webkit-text-stroke-color: black;
+   transition: all 0.35s ease-in-out;
+ }
+
+ .bi-info-circle-fill:hover {
+    color: black;
+    transition: all 0.35s ease-in-out;
+  }
+
  nav .nav-item:not(.compact) {
     padding-top: 7px
  }
@@ -117,16 +130,3 @@ $headings-font-weight:  500 !default;
 .navbar-dark .navbar-nav .nav-link:hover {
     color: black;
 }
-
-#title-slide {
-   font-size: 30px!important;
- }
- 
- #title-slide h1 {
-   font-size: 2.8em!important;
-   text-align: left;
- }
-
- #title-slide h2 {
-   font-size: 2.3em!important;
- }
