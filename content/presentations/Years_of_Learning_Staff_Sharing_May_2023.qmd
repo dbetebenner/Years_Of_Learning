@@ -641,7 +641,7 @@ Section: SGP & Years of Learning
 <br>
 
 <center>
-<iframe width="932" height="626" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwQj8HRfbP1BZjWaEOzTzhnUYDF4q7Pl6YHgPlYWtdBITVE5VNEERp4i2QsWOiMr8bbhwUKt2RhVla/pubchart?oid=153557030&amp;format=interactive"></iframe>
+<iframe width="1030" height="488" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwQj8HRfbP1BZjWaEOzTzhnUYDF4q7Pl6YHgPlYWtdBITVE5VNEERp4i2QsWOiMr8bbhwUKt2RhVla/pubchart?oid=619999414&amp;format=interactive"></iframe>
 </center>
 
 
@@ -666,7 +666,8 @@ Section: Summary and Questions
 * Years of learning interpretations based upon effect-size calculations are a dead end.
 * It's not clear whether extending the effect size approach to utilize growth norms leads to coherent results.
   - It's too easy to throw vertical scales under the bus. For adjacent grades, scaled scores should be close to exchangable. 
-* The possibility that student learning could be so "explosive" after reaching the year of learning threshold could have huge implications for educating students. 
+* The possibility that student learning could be so "explosive" after reaching the year of learning threshold could have huge implications for educating students.
+* I want to believe there is a way to _approximately_ map learning rates to time. 
 
 
 #
