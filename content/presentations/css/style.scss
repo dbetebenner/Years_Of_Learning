@@ -29,3 +29,11 @@ $presentation-heading-font: "Yanone Kaffeesatz", sans-serif !default;
 
 /*-- scss:rules --*/
 .reveal .title-slide h1 {font-size: 3.5em;}
+
+.rotate {
+    writing-mode: vertical-lr;
+   -webkit-transform: rotate(-180deg);
+   -moz-transform: rotate(-180deg);
+}
+
+

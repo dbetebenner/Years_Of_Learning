@@ -2,303 +2,177 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Years of Learning",
     "section": "",
-    "text": "Welcome to the effective data visualisation with R workshop!\nTuesday 6th December 2022\n 9.00AM - 12.00PM AEDT\n Zoom (links provided to participants via email)"
-  },
-  {
-    "objectID": "about.html#materials",
-    "href": "about.html#materials",
-    "title": "About",
-    "section": "Materials",
-    "text": "Materials\nAll materials are hosted on a GitHub repo here and can be downloaded here as a zip file (including the website, slides and exercises).\nOnce the material is downloaded, open the docs/index.html in a browser to see this website (emitanaka.org/EDVR-workshop)."
-  },
-  {
-    "objectID": "about.html#schedule",
-    "href": "about.html#schedule",
-    "title": "About",
-    "section": "Schedule",
-    "text": "Schedule"
-  },
-  {
-    "objectID": "about.html#installation",
-    "href": "about.html#installation",
-    "title": "About",
-    "section": "Installation",
-    "text": "Installation\nThis is only needed if the exercise links above do not work for you.\n\ninstall.packages(c(\"remotes\", \"learnr\"))\nremotes::install_github(\"emitanaka/EDVR-workshop/pkg\")"
-  },
-  {
-    "objectID": "about.html#exercises",
-    "href": "about.html#exercises",
-    "title": "About",
-    "section": "Exercises",
-    "text": "Exercises\nTo run the exercises locally, install the packages under Installation and then run:\n\nlearnr::run_tutorial(\"exercise-01\", package = \"edvr.workshop\")\nlearnr::run_tutorial(\"exercise-02\", package = \"edvr.workshop\")"
+    "text": "Learning by the Year:On the concept of a year’s worth of learning\nA year’s worth of learning (sometimes referred to as a year’s worth of growth or a year’s worth of progress) is not a new idea. The phrase has been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I actually came across a paper that @shangyi and I wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue suggesting something simple and obvious. Scratch beneath the surface and one finds the concept is anything but.\n\n\nResources\n\nYear’s of Learning GitHub Pages"
   },
   {
     "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#inspiration",
     "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#inspiration",
     "title": "Years of Learning",
     "section": "Inspiration",
-    "text": "Inspiration\n\n\n\n\nDiscussion of pandemic learning loss: Weeks/months of learning lost.\n\nLearning as a process with an inherent velocity\n\n\nStates updating long term achievement targets\n\nRecent staff sharing\nDesire to calibrate achievement indicators to ambitious yet reasonable individual learning/growth goals."
+    "text": "Inspiration\n\n\n\n\nPandemic Related Insights\n\nReporting of pandemic learning loss: Weeks/months/years of lost learning.\nRecognition of learning being a process with an inherent velocity\n\nSandy Student’s NCME presentation (2023) and discussion on year’s worth of learning (his dissertation topic).\nStrategic planning by states including updates long term achievement targets\n\nDesire to calibrate achievement indicators to ambitious yet reasonable individual learning/growth goals (Hawaii and Rhode Island).\nRecent staff sharing from Brian on work in Kentucky related to accountability systems.\n\nDesire to make rigorous “a year’s worth of learning” in order to better communicate SGP results."
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#personal-perspectivesbiases",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#personal-perspectivesbiases",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#my-personal-perspectivesbiases",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#my-personal-perspectivesbiases",
     "title": "Years of Learning",
-    "section": "Personal Perspectives/Biases",
-    "text": "Personal Perspectives/Biases\n\n\n\n\nWorking with non-technical audiences requires trade-offs.\nThe best solution from a technical perspective may be a failure from a practical perspective.\nUtility trumps validity.\nAre the shortcomings of “year’s of learning” so large as to make the phrase damaging."
+    "section": "My Personal Perspectives/Biases",
+    "text": "My Personal Perspectives/Biases\n\n\n\n\nCommunicating results to non-technical audiences requires trade-offs.\nThe best solution from a technical perspective may be a communication failure from a practical perspective.\nUtility trumps validity.\nAre the shortcomings of expressions like year’s worth of learning so large as to make them counterproductive?\nOne prominent researcher in the measurement field doesn’t think so."
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#the-problem-with-todays-ai",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#the-problem-with-todays-ai",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#andrew-hos-rule-of-27",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#andrew-hos-rule-of-27",
     "title": "Years of Learning",
-    "section": "The Problem with Today’s AI",
-    "text": "The Problem with Today’s AI\n\nFrom human to data-driven decision-making …\n\n\n\nBlack-box models like deep neural networks are being deployed virtually everywhere.\nIncludes safety-critical and public domains: health care, autonomous driving, finance, …\nMore likely than not that your loan or employment application is handled by an algorithm.\n\n\n\n\n… where black boxes are recipe for disaster.\n\n\n\nWe have no idea what exactly we’re cooking up …\n\nHave you received an automated rejection email? Why didn’t you “mEet tHe sHoRtLisTiNg cRiTeRia”? 🙃\n\n… but we do know that some of it is junk.\n\n\n\n\n\n\n\nFigure 1: Adversarial attacks on deep neural networks. Source: @goodfellow2014explaining"
+    "section": "Andrew Ho’s Rule of 27",
+    "text": "Andrew Ho’s Rule of 27\n\n\n\n1\n\n\n\n\n2\n\n\n\n\n:::::"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#section-3",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#section-3",
     "title": "Years of Learning",
-    "section": "Towards Trustworthy AI",
-    "text": "Towards Trustworthy AI\n\n\nGround Truthing\n\n\nProbabilistic Models\n\n\nCounterfactual Reasoning"
+    "section": "",
+    "text": "Fons Sapientiae Leuven, Belgium\n\nThe name translates to “Source of Wisdom,” and the water the man pours atop his head is supposedly meant to symbolize knowledge flowing into his brain. An intricate math formula is scrawled across the front cover of the book he clutches that, when solved, forms the Dutch word for “happiness.”"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-1",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-1",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#section-4",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#section-4",
     "title": "Years of Learning",
-    "section": "Towards Trustworthy AI",
-    "text": "Towards Trustworthy AI\n\n\nGround Truthing\n\n\nProbabilistic Models\n\n\nCounterfactual Reasoning\n\n\nCurrent Standard in ML\nWe typically want to maximize the likelihood of observing \\(\\mathcal{D}_n\\) under given parameters [@murphy2022probabilistic]:\n\\[\n\\theta^* = \\arg \\max_{\\theta} p(\\mathcal{D}_n|\\theta)\n\\qquad(1)\\]\nCompute an MLE (or MAP) point estimate \\(\\hat\\theta = \\mathbb{E} \\theta^*\\) and use plugin approximation for prediction:\n\\[\np(y|x,\\mathcal{D}_n) \\approx p(y|x,\\hat\\theta)\n\\qquad(2)\\]\n\nIn an ideal world we can just use parsimonious and interpretable models like GLM [@rudin2019stop], for which in many cases we can rely on asymptotic properties of \\(\\theta\\) to quantify uncertainty.\nIn practice these models often have performance limitations.\nBlack-box models like deep neural networks are popular, but they are also the very opposite of parsimonious.\n\nObjective"
+    "section": "",
+    "text": "The predominant view of learning and education (IMHO).\nVolume/amount of “learning” delivered to students in a given time.\n\nWeeks, months, years of learning.\n\nTime on task\n\n\n\n\n\n\n\n\nInspirational, but is this reality?\nWould we know fire if we saw it?\n\nHow would fire manifest itself in assessment results?"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-2",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-2",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-years-worth-of-learning",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-years-worth-of-learning",
     "title": "Years of Learning",
-    "section": "Towards Trustworthy AI",
-    "text": "Towards Trustworthy AI\n\n\nGround Truthing\n\n\nProbabilistic Models\n\n\nCounterfactual Reasoning\n\n\nObjective\n. . .\n\n[…] deep neural networks are typically very underspecified by the available data, and […] parameters [therefore] correspond to a diverse variety of compelling explanations for the data. [@wilson2020case]\n\nIn this setting it is often crucial to treat models probabilistically!\n\\[\np(y|x,\\mathcal{D}_n) = \\int p(y|x,\\theta)p(\\theta|\\mathcal{D}_n)d\\theta\n\\qquad(3)\\]"
+    "section": "A Year’s Worth of Learning",
+    "text": "A Year’s Worth of Learning\n\n\nA year’s worth of learning purports to express an amount of growth (i.e., learning) demonstrated by students.\nThe quantity can be construed as the effect due to exposure of a year’s worth of education.\nBloom et al. (2008) compare effect sizes to estimates of how much students grow in one year.\nDadey and Briggs (2012) investigated the extent to which design and content differences impact growth trends on vertically scaled assessments"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-3",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#towards-trustworthy-ai-3",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#years-of-learning-a-question",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#years-of-learning-a-question",
     "title": "Years of Learning",
-    "section": "Towards Trustworthy AI",
-    "text": "Towards Trustworthy AI\n\n\nGround Truthing\n\n\nProbabilistic Models\n\n\nCounterfactual Reasoning\n\n\n\nWe can now make predictions – great! But do we know how the predictions are actually being made?\n\n\nObjective\nWith the model trained for its task, we are interested in understanding how its predictions change in response to input changes.\n\\[\n\\nabla_x p(y|x,\\mathcal{D}_n;\\hat\\theta)\n\\qquad(4)\\]\n\n\nCounterfactual reasoning (in this context) boils down to simple questions: what if \\(x\\) (factual) \\(\\Rightarrow\\) \\(x\\prime\\) (counterfactual)?\nBy strategically perturbing features and checking the model output, we can (begin to) understand how the model makes its decisions.\nCounterfactual Explanations always have full fidelity by construction (as opposed to surrogate explanations, for example).\n\n\n. . .\n\nImportant to realize that we are keeping \\(\\hat\\theta\\) constant!"
+    "section": "Years of Learning: A Question",
+    "text": "Years of Learning: A Question\n\n\n\nLoading…"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#todays-talk",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#todays-talk",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#effect-size-illustration",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#effect-size-illustration",
     "title": "Years of Learning",
-    "section": "Today’s talk",
-    "text": "Today’s talk\n\n🔮 Explaining Black-Box Models through Counterfactuals (\\(\\approx\\) 10min)\n\nWhat are they? What are they not?\nCounterfactual Explanations in the broader XAI landscape\nFrom Counterfactual Explanations to Algorithmic Recourse\n\n🛠️ Hands-on examples — CounterfactualExplanations.jl in Julia (\\(\\approx\\) 15min)\n📊 Endogenous Macrodynamics in Algorithmic Recourse (\\(\\approx\\) 10min)\n❓ Q&A (\\(\\approx\\) 10min)\n🚀 Related Research Topics (\\(\\approx\\) 10min)\n\nPredictive Uncertainty Quantification"
+    "section": "Effect Size Illustration",
+    "text": "Effect Size Illustration\n\n\n\n\nFigure shows effect size for matched grade 3 to 4 students in mathematics.\nMean scaled score increase of 35 (461 to 496).\nEffect size increase of 0.41.\nNote: This effect size change is applicable to the entire group of students but not, in general, to individual students.\nWhy?"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-framework-for-counterfactual-explanations",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-framework-for-counterfactual-explanations",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#effect-size-illustration-1",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#effect-size-illustration-1",
     "title": "Years of Learning",
-    "section": "A Framework for Counterfactual Explanations",
-    "text": "A Framework for Counterfactual Explanations\n\nEven though […] interpretability is of great importance and should be pursued, explanations can, in principle, be offered without opening the “black box”. [@wachter2017counterfactual]\n\n\n\nFramework\n. . .\nObjective originally proposed by @wachter2017counterfactual is as follows\n\\[\n\\min_{x\\prime \\in \\mathcal{X}} h(x\\prime) \\ \\ \\ \\mbox{s. t.} \\ \\ \\ M(x\\prime) = t\n\\qquad(5)\\]\nwhere \\(h\\) relates to the complexity of the counterfactual and \\(M\\) denotes the classifier.\n. . .\nTypically this is approximated through regularization:\n\\[\nx\\prime = \\arg \\min_{x\\prime}  \\ell(M(x\\prime),t) + \\lambda h(x\\prime)\n\\qquad(6)\\]\n\nIntuition\n. . .\n\n\n\nFigure 2: A cat performing gradient descent in the feature space à la @wachter2017counterfactual."
+    "section": "Effect Size Illustration",
+    "text": "Effect Size Illustration\n\n\n\n\nIncrease in attainment is not uniform by prior attainment (i.e., gains correlate with initial achievement).\nFigure shows two regions:\n\nIndividual gains above effect size.\nIndividual gains below effect size.\n\nBottom axis includes decile cuts for Grade 3 scaled score.\nIn lowest decile, 74.4% of students had gains exceeding the effect size. In highest decile, 15.7% had gains exceeding the effect size.\nReductio ad absurdum"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactuals-as-in-adversarial-examples",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactuals-as-in-adversarial-examples",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#empirical-results",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#empirical-results",
     "title": "Years of Learning",
-    "section": "Counterfactuals … as in Adversarial Examples?",
-    "text": "Counterfactuals … as in Adversarial Examples?\n\n\n\nYes and no!\n\nWhile both are methodologically very similar, adversarial examples are meant to go undetected while CEs ought to be meaningful.\n\n\nDesiderata\n\n\ncloseness: the average distance between factual and counterfactual features should be small (@wachter2017counterfactual)\nactionability: the proposed feature perturbation should actually be actionable (@ustun2019actionable, @poyiadzi2020face)\nplausibility: the counterfactual explanation should be plausible to a human (@joshi2019realistic)\nunambiguity: a human should have no trouble assigning a label to the counterfactual (@schut2021generating)\nsparsity: the counterfactual explanation should involve as few individual feature changes as possible (@schut2021generating)\nrobustness: the counterfactual explanation should be robust to domain and model shifts (@upadhyay2021robust)\ndiversity: ideally multiple diverse counterfactual explanations should be provided (@mothilal2020explaining)\ncausality: counterfactual explanations reflect the structural causal model underlying the data generating process (@karimi2020algorithmic, @karimi2021algorithmic)"
+    "section": "Empirical results",
+    "text": "Empirical results\n\n\nWe examine effect size increases for unmatched and matched cohorts of students using data from 4 states.\nAll data are derived from assessment administrations occurring prior to the COVID-19 pandemic.\nUsing Equation 1 we calculate effect size changes for 1, 2, 3, and 4 years (provided enough years of data exist for the state).\nDepending upon the number of years of data we have for a state, we can calculate effect size changes across several cohorts of students.\nResults are summarized in the following figures."
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactuals-as-in-causal-inference",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactuals-as-in-causal-inference",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#mathematics",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#mathematics",
     "title": "Years of Learning",
-    "section": "Counterfactuals … as in Causal Inference?",
-    "text": "Counterfactuals … as in Causal Inference?\n\nNO!\n\n\n\nCausal inference: counterfactuals are thought of as unobserved states of the world that we would like to observe in order to establish causality.\n\nThe only way to do this is by actually interfering with the state of the world: \\(p(y|do(x),\\theta)\\).\nIn practice we can only move some individuals to the counterfactual state of the world and compare their outcomes to a control group.\nProvided we have controlled for confounders, properly randomized, … we can estimate an average treatment effect: \\(\\hat\\theta\\).\n\nCounterfactual Explanations: involves perturbing features after some model has been trained.\n\nWe end up comparing modeled outcomes \\(p(y|x,\\hat\\phi)\\) and \\(p(y|x\\prime,\\hat\\phi)\\) for individuals.\nWe have not magically solved causality.\n\n\n\n\nThe number of ostensibly pro data scientists confusing themselves into believing that \"counterfactual explanations\" capture real-world causality is just staggering🤦‍♀️. Where do we go from here? How can a community that doesn't even understand what's already known make advances?\n\n— Zachary Lipton (@zacharylipton) June 20, 2022"
+    "section": "Mathematics",
+    "text": "Mathematics\n\nState AState BState CState D"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#from-counterfactual-explanations-to-algorithmic-recourse",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#from-counterfactual-explanations-to-algorithmic-recourse",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#ela",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#ela",
     "title": "Years of Learning",
-    "section": "From Counterfactual Explanations to Algorithmic Recourse",
-    "text": "From Counterfactual Explanations to Algorithmic Recourse\n\n\n\n“You cannot appeal to (algorithms). They do not listen. Nor do they bend.”\n— Cathy O’Neil in Weapons of Math Destruction, 2016\n\n\n\n\nFigure 3: Cathy O’Neil. Source: Cathy O’Neil a.k.a. mathbabe.\n\n\n\nAlgorithmic Recourse\n. . .\n\n@oneil2016weapons points to various real-world involving black-box models and affected individuals facing adverse outcomes.\n\n. . .\n\nThese individuals generally have no way to challenge their outcome.\n\n. . .\n\nCounterfactual Explanations that involve actionable and realistic feature perturbations can be used for the purpose of Algorithmic Recourse."
+    "section": "ELA",
+    "text": "ELA\n\nState AState BState CState D"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactualexplanations.jl",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#counterfactualexplanations.jl",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#lets-summarize",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#lets-summarize",
     "title": "Years of Learning",
-    "section": "CounterfactualExplanations.jl 📦",
-    "text": "CounterfactualExplanations.jl 📦\n     \n\n\n\n\nA unifying framework for generating Counterfactual Explanations.\nFast, extensible and composable allowing users and developers to add and combine different counterfactual generators.\nImplements a number of SOTA generators.\nBuilt in Julia, but can be used to explain models built in R and Python (still experimental).\nStatus 🔁: ready for research, not production. Thought/challenge/contributions welcome!\n\n\n\n\n\n\nPhoto by Denise Jans on Unsplash.\n\n\n\n\n\n\nJulia has an edge with respect to Trustworthy AI: it’s open-source, uniquely transparent and interoperable 🔴🟢🟣"
+    "section": "Let’s Summarize",
+    "text": "Let’s Summarize\n\n\nThe effect size approach to quantifying a year’s worth of learning depends on:\n\nthe assessment that is administered,\nthe population of students to whom the assessment is administered,\nthe year in which the assessment is administered,\nthe content area of the assessment,\nthe grade level of the assessment, and\nthe psychometric design used to scale and construct the assessment.\nMoreover, the calculated effect size is only a system level average and is not applicable for determinations of a year’s worth of learning at the individual level.\n\nThis list of dependencies is as bad as the list we’d put together for any indicator derived from assessments."
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-simple-example",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-simple-example",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#yikes",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#yikes",
     "title": "Years of Learning",
-    "section": "A simple example",
-    "text": "A simple example\n\n\n\nLoad and prepare some toy data.\nSelect a random sample.\nGenerate counterfactuals using different approaches.\n\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10"
+    "section": "Yikes!!!",
+    "text": "Yikes!!!\n\n\n\nHard to call this rule anything but just BAD\nThe assumptions (3 grade levels per standard deviation) don’t hold.\nGives rise to misleading statements, especially for parents concerned about their children.\n\nNot good. We should do better.\n\n\n\nRule of 27\n\n\n\n\n:::::"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#generic-generator",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#generic-generator",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#section-5",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#section-5",
     "title": "Years of Learning",
-    "section": "Generic Generator",
-    "text": "Generic Generator\n\n\nCode\n. . .\nWe begin by instantiating the fitted model …\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n. . .\n… then based on its prediction for \\(x\\) we choose the opposite label as our target …\n\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\n. . .\n… and finally generate the counterfactual.\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\nOutput\n. . .\n\n… et voilà!\n\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10"
+    "section": "",
+    "text": "Is there any"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#probabilistic-methods-for-counterfactual-explanations",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#probabilistic-methods-for-counterfactual-explanations",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#yes",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#yes",
     "title": "Years of Learning",
-    "section": "Probabilistic Methods for Counterfactual Explanations",
-    "text": "Probabilistic Methods for Counterfactual Explanations\nWhen people say that counterfactuals should look realistic or plausible, they really mean that counterfactuals should be generated by the same Data Generating Process (DGP) as the factuals:\n\\[\nx\\prime \\sim p(x)\n\\]\nBut how do we estimate \\(p(x)\\)? Two probabilistic approaches …\n\n\nAPPROACH 1: use the model itselfAPPROACH 2: use some generative model\n\n\n\n\n@schut2021generating note that by maximizing predictive probabilities \\(\\sigma(M(x\\prime))\\) for probabilistic models \\(M\\in\\mathcal{\\widetilde{M}}\\) one implicitly minimizes epistemic and aleotoric uncertainty.\n\\[\nx\\prime = \\arg \\min_{x\\prime}  \\ell(M(x\\prime),t) \\ \\ \\ , \\ \\ \\ M\\in\\mathcal{\\widetilde{M}}\n\\qquad(7)\\]\n\n\n\n\nFigure 4: A cat performing gradient descent in the feature space à la @schut2021generating\n\n\n\n\n\n\n\n\nInstead of perturbing samples directly, some have proposed to instead traverse a lower-dimensional latent embedding learned through a generative model [@joshi2019realistic].\n\\[\nz\\prime = \\arg \\min_{z\\prime}  \\ell(M(dec(z\\prime)),t) + \\lambda h(x\\prime)\n\\qquad(8)\\]\nand\n\\[x\\prime = dec(z\\prime)\\]\nwhere \\(dec(\\cdot)\\) is the decoder function.\n\n\n\n\nFigure 5: Counterfactual (yellow) generated through latent space search (right panel) following @joshi2019realistic. The corresponding counterfactual path in the feature space is shown in the left panel."
+    "section": "Yes!",
+    "text": "Yes!\n\nMeanConditional MeanConditional MedianConditional Decile"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#greedy-generator",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#greedy-generator",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#how",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#how",
     "title": "Years of Learning",
-    "section": "Greedy Generator",
-    "text": "Greedy Generator\n\n\nCode\n. . .\nThis time we use a Bayesian classifier …\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n. . .\n… and once again choose our target label as before …\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n. . .\n… to then finally use greedy search to find a counterfactual.\n\n\n [1]  0.07837333 -0.46100907  0.47004362  0.37409935 -0.43943804  0.49644490 -0.39117728  0.81303863  0.03163057 -1.22981469\n\n\n\nOutput\n. . .\n\nIn this case the Bayesian approach yields a similar outcome.\n\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10"
+    "section": "How?",
+    "text": "How?\n\n\nYear’s worth of learning is implicitly a norm-referenced quantity based upon average student performance.\nAs such, one can employ regression based approaches to better formalize the concept.\nAttempts to reduce a year’s worth of learning to an effect size are a clumsy, scaled-based attempt to address the question.\nAs a norm-referenced quantity, SGPs can be utilized to define a year’s worth of learning to be 50th percentile growth.\nThis is consistent with the effect size approach to defining change and avoids all of the shortcomings mentioned.\nThe next section explores the consequences of this."
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#latent-space-generator",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#latent-space-generator",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#analyses",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#analyses",
     "title": "Years of Learning",
-    "section": "Latent Space Generator",
-    "text": "Latent Space Generator\n\n\nCode\n. . .\nUsing the same classifier as before we can either use the specific REVISEGenerator …\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n. . .\n… or realize that that REVISE [@joshi2019realistic] just boils down to generic search in a latent space:\n\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\n\nOutput\n. . .\n\nWe have essentially combined latent search with a probabilistic classifier (as in @antoran2020getting).\n\n\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00"
+    "section": "Analyses",
+    "text": "Analyses\n\n\nWe examine the relationship between mean SGP and year’s of learning using pre-pandemic, vertically scaled, pre-pandemic, longitudinal data from 4 states as follows:\n\nOne year’s growth (for a one year span of time) is defined as 50th percentile growth. This is a normal SGP.\nTwo year’s growth (in one year) is calculated empirically by running individual data spanning two years (e.g. grade 3 to 5 data) through one-year growth norms (e.g., grade 3 to 4 growth norms).\nThree year’s growth (in one year) is calculated empirically by running individual data spanning three years (e.g. grade 3 to 6 data) through one-year growth norms (e.g., grade 3 to 4 growth norms).\nNo growth (in one year) is calculated by running individual data with no increase in scaled score through the one-year growth norms (e.g., grade 3 to 4 growth norms).\nI also calculated half-year growth (in one year) by running individual data spanning a single year (e.g., grade 3 to 4 data) through two-year growth norms(e.g., grade 3 to 5 growth norms).\n\nResults are summarized in the following figures."
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#diverse-counterfactuals",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#diverse-counterfactuals",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#sgp-by-years-of-learning-mathematics",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#sgp-by-years-of-learning-mathematics",
     "title": "Years of Learning",
-    "section": "Diverse Counterfactuals",
-    "text": "Diverse Counterfactuals\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\nCode\n. . .\nWe can use the DiCEGenerator to produce multiple diverse counterfactuals:\n\n\n[1] 2\n\n\n\nOutput\n. . .\n\n\n[1] 4"
+    "section": "SGP by Years of Learning: Mathematics",
+    "text": "SGP by Years of Learning: Mathematics\n\nState AState BState CState D"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-real-world-example---credit-default",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#a-real-world-example---credit-default",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#sgp-by-years-of-learning-ela",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#sgp-by-years-of-learning-ela",
     "title": "Years of Learning",
-    "section": "A Real-World Example - Credit Default",
-    "text": "A Real-World Example - Credit Default\n\nThe Give Me Some Credit dataset is publicly available from Kaggle.\n\n\nImprove on the state of the art in credit scoring by predicting the probability that somebody will experience financial distress in the next two years.\n\n\nWe have \\(y \\in \\{0=\\text{no stress},1=\\text{stress}\\}\\) and a number of demographic and credit-related features \\(X\\).\n\n\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\n [1]  0.328339512 -0.002135704  0.289492054  0.616772281 -1.019702088 -0.091856863  0.117467116 -0.585557380 -0.032799089 -0.028464114\n\n\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10"
+    "section": "SGP by Years of Learning: ELA",
+    "text": "SGP by Years of Learning: ELA\n\nState AState BState CState D"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#ignoring-mutability",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#ignoring-mutability",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#back-to-the-survey-question",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#back-to-the-survey-question",
     "title": "Years of Learning",
-    "section": "Ignoring Mutability",
-    "text": "Ignoring Mutability\nUsing DiCE to generate counterfactuals for a single individual, ignoring actionability:\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10"
+    "section": "Back to the survey question",
+    "text": "Back to the survey question\n\nBased upon the SGP analyses were you able to determine the correct answer to the question you answered?"
   },
   {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#respecting-mutability",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#respecting-mutability",
+    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#startling-results",
+    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#startling-results",
     "title": "Years of Learning",
-    "section": "Respecting Mutability",
-    "text": "Respecting Mutability\nUsing the generic generator to generate counterfactuals for multiple individuals, respecting that age cannot be decreased (you might argue that age also cannot be easily increased …):\n\n\n [1]  0.16677259  0.02889741 -0.32035777 -0.82787494  0.47511804  0.69320479  0.82366567 -2.52462969 -0.99564311  1.14298003\n\n\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10\n\n\n\n\n  speed dist\n1     4    2\n2     4   10\n3     7    4\n4     7   22\n5     8   16\n6     9   10"
-  },
-  {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#motivation",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#motivation",
-    "title": "Years of Learning",
-    "section": "Motivation",
-    "text": "Motivation\n\n\n\nTL;DR: We find that standard implementation of various SOTA approaches to AR can induce substantial domain and model shifts. We argue that these dynamics indicate that individual recourse generates hidden external costs and provide mitigation strategies.\n\nIn this work we investigate what happens if Algorithmic Recourse is actually implemented by a large number of individuals.\nFigure 6 illustrates what we mean by Endogenous Macrodynamics in Algorithmic Recourse:\n\nPanel (a): we have a simple linear classifier trained for binary classification where samples from the negative class (y=0) are marked in blue and samples of the positive class (y=1) are marked in orange\nPanel (b): the implementation of AR for a random subset of individuals leads to a noticable domain shift\nPanel (c): as the classifier is retrained we observe a corresponding model shift [@upadhyay2021robust]\nPanel (d): as this process is repeated, the decision boundary moves away from the target class.\n\n\n\n\n\nFigure 6: Proof of concept: repeated implementation of AR leads to domain and model shifts.\n\n\n\nWe argue that these shifts should be considered as an expected external cost of individual recourse and call for a paradigm shift from individual to collective recourse in these types of situations."
-  },
-  {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#generalised-framework",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#generalised-framework",
-    "title": "Years of Learning",
-    "section": "Generalised Framework",
-    "text": "Generalised Framework\nFrom individual recourse …\nWe restate Equation 6 to encapsulate latent space search:\n\\[\n\\begin{aligned}\n\\mathbf{s}^\\prime &= \\arg \\min_{\\mathbf{s}^\\prime \\in \\mathcal{S}} \\left\\{  {\\text{yloss}(M(f(\\mathbf{s}^\\prime)),y^*)}+ \\lambda {\\text{cost}(f(\\mathbf{s}^\\prime)) }  \\right\\}\n\\end{aligned}\n\\qquad(9)\\]\n… towards collective recourse\nWe borrow the notion of negative externalities from Economics, to formalise the idea that individual recourse fails to account for external costs:\n\\[\n\\begin{aligned}\n\\mathbf{s}^\\prime &= \\arg \\min_{\\mathbf{s}^\\prime \\in \\mathcal{S}} \\{ {\\text{yloss}(M(f(\\mathbf{s}^\\prime)),y^*)} \\\\ &+ \\lambda_1 {\\text{cost}(f(\\mathbf{s}^\\prime))} + \\lambda_2 {\\text{extcost}(f(\\mathbf{s}^\\prime))} \\}\n\\end{aligned}\n\\qquad(10)\\]"
-  },
-  {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#findings",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#findings",
-    "title": "Years of Learning",
-    "section": "Findings",
-    "text": "Findings\n\n\n\n\n\nResults for synthetic data.\n\n\n\n\n\n\nResults for real-word data."
-  },
-  {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#mitigation-strategies",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#mitigation-strategies",
-    "title": "Years of Learning",
-    "section": "Mitigation Strategies",
-    "text": "Mitigation Strategies\n\n\n\nChoose more conservative decision thresholds.\nClassifer Preserving ROAR (ClaPROAR): penalise classifier loss.\n\n\\[\n\\begin{aligned}\n\\text{extcost}(f(\\mathbf{s}^\\prime)) = l(M(f(\\mathbf{s}^\\prime)),y^\\prime)\n\\end{aligned}\n\\qquad(11)\\]\n\nGravitational Counterfactual Explanations: penalise distance to some sensible point in the target domain.\n\n\\[\n\\begin{aligned}\n\\text{extcost}(f(\\mathbf{s}^\\prime)) = \\text{dist}(f(\\mathbf{s}^\\prime),\\bar{x})  \n\\end{aligned}\n\\qquad(12)\\]\n\n\n\n\nFigure 7: Illustrative example demonstrating the properties of the various mitigation strategies. Samples from the negative class \\((y = 0)\\) are marked in blue while samples of the positive class \\((y = 1)\\) are marked in orange.\n\n\n\n\n\n\n\n\n\nMitigation strategies applied to synthetic data.\n\n\n\n\n\n\nMitigation strategies applied to real-world data."
-  },
-  {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#effortless-bayesian-deep-learning-through-laplace-redux",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#effortless-bayesian-deep-learning-through-laplace-redux",
-    "title": "Years of Learning",
-    "section": "Effortless Bayesian Deep Learning through Laplace Redux",
-    "text": "Effortless Bayesian Deep Learning through Laplace Redux\n   \n\n\nLaplaceRedux.jl (formerly BayesLaplace.jl) is a small package that can be used for effortless Bayesian Deep Learning and Logistic Regression trough Laplace Approximation. It is inspired by this Python library and its companion paper.\n\n\n\nPlugin Approximation (left) and Laplace Posterior (right) for simple artificial neural network.\n\n\n\n\n\n\nSimulation of changing posteriour predictive distribution. Image by author."
-  },
-  {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#conformalprediction.jl",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#conformalprediction.jl",
-    "title": "Years of Learning",
-    "section": "ConformalPrediction.jl",
-    "text": "ConformalPrediction.jl\n      \nConformalPrediction.jl is a package for Uncertainty Quantification (UQ) through Conformal Prediction (CP) in Julia. It is designed to work with supervised models trained in MLJ [@blaom2020mlj]. Conformal Prediction is distribution-free, easy-to-understand, easy-to-use and model-agnostic.\n\n\n\nConformal Prediction in action: Prediction sets for two different samples and changing coverage rates. As coverage grows, so does the size of the prediction sets."
-  },
-  {
-    "objectID": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#more-resources",
-    "href": "content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#more-resources",
-    "title": "Years of Learning",
-    "section": "More Resources 📚",
-    "text": "More Resources 📚\n\n\n\nRead on …\n\n\nBlog post introducing CE: [TDS], [blog].\nBlog post on Laplace Redux: [TDS], [blog].\nBlog post on Conformal Prediction: [TDS], [blog].\n\n\n… or get involved! 🤗\n\n\nContributor’s Guide for CounterfactualExplanations.jl\nContributor’s Guide for ConformalPrediction.jl"
+    "section": "Startling results",
+    "text": "Startling results\n\nThe results perplexed me when I ran the analyses a month ago.\nHow is it possible for 60 or more percent of students making at least a year’s worth of learning to make two or more year’s worth of learning.\n\nAre vertical scales this corrupt?\nCharlie DePascale called vertical scaling an interesting parlor trick."
   },
   {
     "objectID": "documents.html",
     "href": "documents.html",
-    "title": "Documents",
+    "title": "Years of Learning",
     "section": "",
-    "text": "In this 3 hour tutorial, I will demonstrate some cognitive principles and apply methods supported by empirical studies that make data visualisation more effective. The construction of data visualisation will be accompanied with R code using the ggplot2 package. The R code and data used will be provided so participants can fully replicate the presented data visualisations.\nParticipants are expected to know how to use R. Some knowledge in tidyverse would be beneficial. You can find an interactive introduction to data analysis with R at https://learnr.numbat.space/."
-  },
-  {
-    "objectID": "documents.html#biography-of-workshop-presenter",
-    "href": "documents.html#biography-of-workshop-presenter",
-    "title": "Documents",
-    "section": "Biography of Workshop Presenter",
-    "text": "Biography of Workshop Presenter\nDr. Emi Tanaka is a Senior Lecturer in Statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area includes data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter’s Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops."
-  },
-  {
-    "objectID": "documents.html#lorum-ipsum",
-    "href": "documents.html#lorum-ipsum",
-    "title": "Documents",
-    "section": "Lorum Ipsum",
-    "text": "Lorum Ipsum\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "text": "Learning by the Year:On the concept of a year’s worth of learning\nA year’s worth of learning (sometimes referred to as a year’s worth of growth or a year’s worth of progress) is not a new idea. The phrase has been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I actually came across a paper that @shangyi and I wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue suggesting something simple and obvious. Scratch beneath the surface and one finds the concept is anything but.\n\n\nResources\n\nYear’s of Learning GitHub Pages"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Index",
+    "title": "Years of Learning",
     "section": "",
-    "text": "Welcome to the effective data visualisation with R workshop!\nTuesday 6th December 2022\n 9.00AM - 12.00PM AEDT\n Zoom (links provided to participants via email)"
-  },
-  {
-    "objectID": "index.html#materials",
-    "href": "index.html#materials",
-    "title": "Index",
-    "section": "Materials",
-    "text": "Materials\nAll materials are hosted on a GitHub repo here and can be downloaded here as a zip file (including the website, slides and exercises).\nOnce the material is downloaded, open the docs/index.html in a browser to see this website (emitanaka.org/EDVR-workshop)."
-  },
-  {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Index",
-    "section": "Schedule",
-    "text": "Schedule"
-  },
-  {
-    "objectID": "index.html#installation",
-    "href": "index.html#installation",
-    "title": "Index",
-    "section": "Installation",
-    "text": "Installation\nThis is only needed if the exercise links above do not work for you.\n\ninstall.packages(c(\"remotes\", \"learnr\"))\nremotes::install_github(\"emitanaka/EDVR-workshop/pkg\")"
-  },
-  {
-    "objectID": "index.html#exercises",
-    "href": "index.html#exercises",
-    "title": "Index",
-    "section": "Exercises",
-    "text": "Exercises\nTo run the exercises locally, install the packages under Installation and then run:\n\nlearnr::run_tutorial(\"exercise-01\", package = \"edvr.workshop\")\nlearnr::run_tutorial(\"exercise-02\", package = \"edvr.workshop\")"
-  },
-  {
-    "objectID": "index.html#lorum-ipsum",
-    "href": "index.html#lorum-ipsum",
-    "title": "Index",
-    "section": "Lorum Ipsum",
-    "text": "Lorum Ipsum\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "text": "Learning by the Year:On the concept of a year’s worth of learning\nA year’s worth of learning (sometimes referred to as a year’s worth of growth or a year’s worth of progress) is not a new idea. The phrase has been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I actually came across a paper that @shangyi and I wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue suggesting something simple and obvious. Scratch beneath the surface and one finds the concept is anything but.\n\n\nResources\n\nYear’s of Learning GitHub Pages"
   },
   {
     "objectID": "license.html",
@@ -310,29 +184,15 @@
   {
     "objectID": "news.html",
     "href": "news.html",
-    "title": "News",
+    "title": "Years of Learning",
     "section": "",
-    "text": "In this 3 hour tutorial, I will demonstrate some cognitive principles and apply methods supported by empirical studies that make data visualisation more effective. The construction of data visualisation will be accompanied with R code using the ggplot2 package. The R code and data used will be provided so participants can fully replicate the presented data visualisations.\nParticipants are expected to know how to use R. Some knowledge in tidyverse would be beneficial. You can find an interactive introduction to data analysis with R at https://learnr.numbat.space/."
-  },
-  {
-    "objectID": "news.html#biography-of-workshop-presenter",
-    "href": "news.html#biography-of-workshop-presenter",
-    "title": "News",
-    "section": "Biography of Workshop Presenter",
-    "text": "Biography of Workshop Presenter\nDr. Emi Tanaka is a Senior Lecturer in Statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area includes data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter’s Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops."
+    "text": "Years of Learning\n\n\nLearning by the Year:On the concept of a year’s worth of learning\nA year’s worth of learning (sometimes referred to as a year’s worth of growth or a year’s worth of progress) is not a new idea. The phrase has been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I actually came across a paper that @shangyi and I wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue suggesting something simple and obvious. Scratch beneath the surface and one finds the concept is anything but.\n\n\nResources\n\nYear’s of Learning GitHub Pages"
   },
   {
     "objectID": "presentations.html",
     "href": "presentations.html",
     "title": "Presentations",
     "section": "",
-    "text": "In this 3 hour tutorial, I will demonstrate some cognitive principles and apply methods supported by empirical studies that make data visualisation more effective. The construction of data visualisation will be accompanied with R code using the ggplot2 package. The R code and data used will be provided so participants can fully replicate the presented data visualisations.\nParticipants are expected to know how to use R. Some knowledge in tidyverse would be beneficial. You can find an interactive introduction to data analysis with R at https://learnr.numbat.space/."
-  },
-  {
-    "objectID": "presentations.html#biography-of-workshop-presenter",
-    "href": "presentations.html#biography-of-workshop-presenter",
-    "title": "Presentations",
-    "section": "Biography of Workshop Presenter",
-    "text": "Biography of Workshop Presenter\nDr. Emi Tanaka is a Senior Lecturer in Statistics at Monash University whose primary interest is to develop impactful statistical methods and tools that can readily be used by practitioners. Her research area includes data visualisation, mixed models and experimental designs, motivated primarily by problems in bioinformatics and agricultural sciences. She is currently the President of the Statistical Society of Australia Victorian Branch and the recipient of the Distinguished Presenter’s Award from the Statistical Society of Australia for her delivery of a wide-range of R workshops."
+    "text": "Years of Learning\n\n\nLearning by the Year:On the concept of a year’s worth of learning\nA year’s worth of learning (sometimes referred to as a year’s worth of growth or a year’s worth of progress) is not a new idea. The phrase has been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I actually came across a paper that @shangyi and I wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue suggesting something simple and obvious. Scratch beneath the surface and one finds the concept is anything but.\n\n\nResources\n\nYear’s of Learning GitHub Pages"
   }
 ]

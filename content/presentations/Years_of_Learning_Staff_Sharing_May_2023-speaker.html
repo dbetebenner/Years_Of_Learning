@@ -30,7 +30,26 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto.css" id="theme">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -333,7 +352,7 @@
     <div class="slides">
 
 
-<section id="section" class="title-slide slide level1 center" data-background-image="images/apples_by_the_bushel.jpg" data-background-size="cover" data-background-position="left" data-background-color="black" data-background-opacity="0.6">
+<section id="section" class="title-slide slide level1" data-background-image="images/apples_by_the_bushel.jpg" data-background-size="cover" data-background-position="left" data-background-color="black" data-background-opacity="0.6">
 <h1></h1>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -350,33 +369,112 @@ Santa Fe, New Mexico
 <h4>
 May 23rd, 2023
 </h4>
-</div><div class="column" style="text-align: right; font-size: 68px; font-style: italic">
+</div><div class="column" style="text-align: right; font-size: 68px; font-style: italic; padding-top: 500px;">
 <p>Apples by the bushel,</p>
-<p>learning by the year.</p>
+<p>learning by the year!</p>
 </div>
 </div>
+<!--
+#########################################
+Section: Introduction/Background
+#########################################
+-->
 </section>
 
 <section>
-<section id="section-1" class="title-slide slide level1 center">
+<section id="section-1" class="title-slide slide level1">
 <h1></h1>
-<center>
-<div class="cell">
+<div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <span class="figsgradient" style=" font-size:130pt; color:magenta;">{sept }§0y|0e|0a|1r|1[+]s|1[+] |1o|1[+]f|2 |2l|2[+]e|2a|2r|2n|3i|3n|3g|3{june }</span>
 </div>
 </div>
-</center>
+<ul>
+<li>Expressions relating amounts of learning to time (e.g., <em>a year’s worth of learning</em>) have been around for a long time.<sup>1</sup></li>
+<li>These expressions often roll off the tongue and suggest something obvious – something that everyone understands.<sup>2</sup></li>
+<li>Despite the commonsense facade, relating amount of learning to time conceals significant technical and conceptual issues.</li>
+<li>I would argue that the expression <span style="color: red;"><strong>On grade level</strong></span> is to <span style="color: blue;"><strong>attainment</strong></span> as <span style="color: red;"><strong>a year’s worth of learning</strong></span> is to <span style="color: blue;"><strong>growth</strong></span>.</li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>When going through some old documents I found a <a href="https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/yearsgrowth.pdf" class="external" target="_blank">paper</a> and <a href="https://github.com/CenterForAssessment/SGP_Resources/blob/master/presentations/yearsgrowth_presentation.pdf" class="external" target="_blank">presentation</a> I wrote for AERA on the phrase back in 2008 that I had completely forgotten about.</p></li><li id="fn2"><p>Think of the expression <em>an honest day’s work</em>.</p></li></ol></aside></section>
+<section id="inspiration" class="slide level2" data-transition="fade">
+<h2>Inspiration</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
 <div>
 <ul>
-<li class="fragment">The phrase rolls of one’s tongue.</li>
-<li class="fragment">The phrase suggests something commonsense that all understand.</li>
-<li class="fragment">On grade level is to attainment as A year’s worth of learning is to growth.</li>
-<li class="fragment">The phrase conceals significant technical and conceptual issues.</li>
+<li class="fragment">Pandemic Related Insights
+<ul>
+<li class="fragment">Reporting of pandemic learning loss: Weeks/months/years of lost learning.</li>
+<li class="fragment">Recognition of learning being a process with an inherent velocity</li>
+</ul></li>
+<li class="fragment">Sandy Student’s NCME presentation <span class="citation" data-cites="Student:2023">(<a href="#/section-6" role="doc-biblioref" onclick="">2023</a>)</span> and discussion on year’s worth of learning (his dissertation topic).</li>
+<li class="fragment">Strategic planning by states including updates long term achievement targets
+<ul>
+<li class="fragment">Desire to calibrate achievement indicators to ambitious yet reasonable individual learning/growth goals (Hawaii and Rhode Island).</li>
+<li class="fragment">Recent staff sharing from Brian on work in Kentucky related to accountability systems.</li>
+</ul></li>
+<li class="fragment">Desire to make rigorous “a year’s worth of learning” in order to better communicate SGP results.</li>
 </ul>
 </div>
+</div><div class="column" style="width:40%;">
+<p><img data-src="images/light_bulb.svg" style="width:75.0%"></p>
+</div>
+</div>
+</section>
+<section id="my-personal-perspectivesbiases" class="slide level2" data-background-image="images/bias.jpg" data-background-size="cover" data-background-position="right" data-background-color="black" data-background-opacity="0.4">
+<h2>My Personal Perspectives/Biases</h2>
+<div class="columns">
+<div class="column" style="width:60%;">
+<div>
+<ul>
+<li class="fragment">Communicating results to non-technical audiences requires trade-offs.</li>
+<li class="fragment">The best solution from a technical perspective may be a communication failure from a practical perspective.</li>
+<li class="fragment">Utility trumps validity.</li>
+<li class="fragment">Are the shortcomings of expressions like <em>year’s worth of learning</em> so large as to make them counterproductive?</li>
+<li class="fragment">One prominent researcher in the measurement field doesn’t think so.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="andrew-hos-rule-of-27" class="slide level2" data-transition="fade">
+<h2>Andrew Ho’s Rule of 27</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<center>
+<span style="font-size: 150px; color: #26a7de; text-align: center;">1</span>
+</center>
+<p></p><div id="tweet-29028"></div><script>tweet={"url":"https:\/\/twitter.com\/AndrewDeanHo\/status\/1565345531463110657","author_name":"Andrew Ho","author_url":"https:\/\/twitter.com\/AndrewDeanHo","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EBut recently I&#39;ve relaxed this perspective when engaging with the public about measurement. I&#39;d rather people be interested and learn more than tune out entirely. This comes with risks. I&#39;ll accept them. 5\/\u003C\/p\u003E&mdash; Andrew Ho (@AndrewDeanHo) \u003Ca href=\"https:\/\/twitter.com\/AndrewDeanHo\/status\/1565345531463110657?ref_src=twsrc%5Etfw\"\u003ESeptember 1, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-29028").innerHTML = tweet["html"];</script><p></p>
+</div><div class="column" style="width:50%;">
+<center>
+<span style="font-size: 150px; color: #26a7de">2</span>
+</center>
+<p></p><div id="tweet-32990"></div><script>tweet={"url":"https:\/\/twitter.com\/AndrewDeanHo\/status\/1565345533866086402","author_name":"Andrew Ho","author_url":"https:\/\/twitter.com\/AndrewDeanHo","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EMy &quot;months of learning&quot; conversion uses what I call the &quot;Rule of 27,&quot; assuming 3 grade levels per standard deviation unit and 9 months in an academic year. Others can pick another rule! We review the vertical link that underlies this here: \u003Ca href=\"https:\/\/t.co\/R7qAWA7Sk0\"\u003Ehttps:\/\/t.co\/R7qAWA7Sk0\u003C\/a\u003E 6\/\u003C\/p\u003E&mdash; Andrew Ho (@AndrewDeanHo) \u003Ca href=\"https:\/\/twitter.com\/AndrewDeanHo\/status\/1565345533866086402?ref_src=twsrc%5Etfw\"\u003ESeptember 1, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-32990").innerHTML = tweet["html"];</script><p></p>
+</div>
+</div>
+<p>:::::</p>
+<!--
+#########################################
+Section: Pails and Fires 
+#########################################
+-->
+</section></section>
+<section>
+<section id="section-2" class="title-slide slide level1" data-background-image="images/william_butler_yeats.jpg" data-background-size="cover" data-background-position="right">
+<h1></h1>
+<div class="columns">
+<div class="column" style="text-align: left; vertical-align: top; font-family: 'Fasthand', cursive; font-size: 68px; color: cornsilk;">
+<p>Education is not the filling of a pail, but the lighting of a fire.</p>
+<p><br></p>
+<p><span style="text-align: right;">William Butler Yeats</span></p>
+</div>
+</div>
+</section>
+<section id="section-3" class="slide level2" data-background-image="images/fons_sapientiae.jpg" data-background-size="cover" data-background-position="right">
+<h2></h2>
+<p><span class="rotate" style="font-size: 160px; color: white;">Fons Sapientiae</span> <span class="rotate" style="font-size: 80px; color: white;">Leuven, Belgium</span></p>
 <aside class="notes">
-<p>The phrase a “year’s worth of learning” has been used since I began running growth analyses over 15 years ago.</p>
+<p>The name translates to “Source of Wisdom,” and the water the man pours atop his head is supposedly meant to symbolize knowledge flowing into his brain. An intricate math formula is scrawled across the front cover of the book he clutches that, when solved, forms the Dutch word for “happiness.”</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -389,945 +487,473 @@ May 23rd, 2023
           display:block!important;
       }</style></aside>
 </section>
-<section id="inspiration" class="slide level2">
-<h2>Inspiration</h2>
+<section id="section-4" class="slide level2">
+<h2></h2>
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:50%;">
+<center>
+<img data-src="images/pail.svg" height="300">
+</center>
 <div>
 <ul>
-<li class="fragment">Discussion of pandemic learning loss: Weeks/months of learning lost.
+<li class="fragment">The predominant view of learning and education (IMHO).</li>
+<li class="fragment">Volume/amount of “learning” delivered to students in a given time.
 <ul>
-<li class="fragment">Learning as a process with an inherent velocity</li>
-<li class="fragment"></li>
+<li class="fragment">Weeks, months, years of learning.</li>
 </ul></li>
-<li class="fragment">States updating long term achievement targets
+<li class="fragment">Time on task</li>
+</ul>
+</div>
+</div><div class="column">
+<center>
+<img data-src="images/fire.svg" height="300">
+</center>
+<div>
 <ul>
-<li class="fragment">Recent staff sharing</li>
-<li class="fragment">Desire to calibrate achievement indicators to ambitious yet reasonable individual learning/growth goals.</li>
+<li class="fragment">Inspirational, but is this reality?</li>
+<li class="fragment">Would we know fire if we saw it?
+<ul>
+<li class="fragment">How would <em>fire</em> manifest itself in assessment results?</li>
 </ul></li>
 </ul>
 </div>
-</div><div class="column" style="width:40%;">
-<p><img data-src="images/bulb_on.svg"></p>
+</div>
+</div>
+<!--
+#########################################
+Section: Change 
+#########################################
+-->
+</section></section>
+<section>
+<section id="understanding-change" class="title-slide slide level1">
+<h1>Understanding change</h1>
+<div class="columns">
+<div class="column fragment" style="width:50%;">
+<center>
+Cross-Sectional Change (Improvement)
+</center>
+<p><img data-src="images/cross_section.gif"></p>
+<div>
+<ul>
+<li class="fragment">Comparison of same grade and content area over time</li>
+<li class="fragment">Often used to examine changes in percent proficient</li>
+<li class="fragment">Most common comparison utilized for large scale assessment data</li>
+</ul>
+</div>
+</div><div class="column fragment" style="width:50%;">
+<center>
+Longitudinal Change (Growth)
+</center>
+<p><img data-src="images/longitudinal.gif"></p>
+<div>
+<ul>
+<li class="fragment">Examine change of cohort of same students over time</li>
+<li class="fragment">Data structure used to calculate student growth (e.g., SGPs)</li>
+<li class="fragment">Calculation of magnitude of change requires a vertical scale.</li>
+<li class="fragment">This is the data structure associated with <em>years of learning</em>.</li>
+</ul>
+</div>
 </div>
 </div>
 </section>
-<section id="personal-perspectivesbiases" class="slide level2" data-background-image="images/bias.jpg" data-background-size="cover" data-background-position="right" data-background-color="black" data-background-opacity="0.4">
-<h2>Personal Perspectives/Biases</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
+<section id="a-years-worth-of-learning" class="slide level2">
+<h2>A Year’s Worth of Learning</h2>
 <div>
 <ul>
-<li class="fragment">Working with non-technical audiences requires trade-offs.</li>
-<li class="fragment">The best solution from a technical perspective may be a failure from a practical perspective.</li>
-<li class="fragment">Utility trumps validity.</li>
-<li class="fragment">Are the shortcomings of “year’s of learning” so large as to make the phrase damaging.</li>
+<li class="fragment"><em>A year’s worth of learning</em> purports to express an amount of growth (i.e., learning) demonstrated by students.</li>
+<li class="fragment">The quantity can be construed as the <em>effect</em> due to exposure of a year’s worth of education.</li>
+<li class="fragment"><span class="citation" data-cites="BlooHill:2008">Bloom et al. (<a href="#/section-6" role="doc-biblioref" onclick="">2008</a>)</span> compare effect sizes to estimates of how much students grow in one year.</li>
+<li class="fragment"><span class="citation" data-cites="DadeBrig:2012">Dadey and Briggs (<a href="#/section-6" role="doc-biblioref" onclick="">2012</a>)</span> investigated the extent to which design and content differences impact growth trends on vertically scaled assessments</li>
 </ul>
 </div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="section-2" class="title-slide slide level1 center" data-background-image="images/william_butler_yeats.jpg" data-background-size="cover" data-background-position="right">
-<h1></h1>
-<div class="columns">
-<div class="column" style="text-align: left; vertical-align: top; font-family: 'Fasthand', cursive; font-size: 68px; color: cornsilk;">
-<p>Education is not the filling of a pail, but the lighting of a fire.</p>
+</section>
+<section id="years-of-learning-a-question" class="slide level2">
+<h2>Years of Learning: A Question</h2>
 <p><br></p>
-<p><span style="text-align: right;">William Butler Yeats</span></p>
-</div>
-</div>
-</section>
-<section id="the-problem-with-todays-ai" class="slide level2">
-<h2>The Problem with Today’s AI</h2>
-<blockquote>
-<p>From <strong>human</strong> to <strong>data-driven</strong> decision-making …</p>
-</blockquote>
-<div>
-<ul>
-<li class="fragment">Black-box models like deep neural networks are being deployed virtually everywhere.</li>
-<li class="fragment">Includes safety-critical and public domains: health care, autonomous driving, finance, …</li>
-<li class="fragment">More likely than not that your loan or employment application is handled by an algorithm.</li>
-</ul>
-</div>
-<div class="fragment">
-<blockquote>
-<p>… where black boxes are recipe for disaster.</p>
-</blockquote>
-<div>
-<ul>
-<li class="fragment">We have no idea what exactly we’re cooking up …
-<ul>
-<li class="fragment">Have you received an automated rejection email? Why didn’t you “mEet tHe sHoRtLisTiNg cRiTeRia”? 🙃</li>
-</ul></li>
-<li class="fragment">… but we do know that some of it is junk.</li>
-</ul>
-</div>
-</div>
-<div class="fragment">
-<div id="fig-panda" class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png" style="width:50.0%"></p>
-<figcaption>Figure&nbsp;1: Adversarial attacks on deep neural networks. Source: <span class="citation" data-cites="goodfellow2014explaining">@goodfellow2014explaining</span></figcaption>
-</figure>
-</div>
-</div>
-</section>
-<section id="towards-trustworthy-ai" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
-<h2 data-id="quarto-animate-title">Towards Trustworthy AI</h2>
-<div class="r-hstack">
-<div data-id="box3" style="background: #389826; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center;">
-<p>Ground Truthing</p>
-</div>
-<div data-id="box2" style="background: #cb3c33; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center;">
-<p>Probabilistic Models</p>
-</div>
-<div data-id="box1" style="background: #9558b2; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center;">
-<p>Counterfactual Reasoning</p>
-</div>
-</div>
-</section>
-<section id="towards-trustworthy-ai-1" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
-<h2 data-id="quarto-animate-title">Towards Trustworthy AI</h2>
-<div class="r-hstack" style="text-align: center;">
-<div data-id="box3" style="background: #389826; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center; opacity: 0.5;">
-<p>Ground Truthing</p>
-</div>
-<div data-id="box2" style="background: #cb3c33; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center;">
-<p>Probabilistic Models</p>
-</div>
-<div data-id="box1" style="background: #9558b2; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center; opacity: 0.5;">
-<p>Counterfactual Reasoning</p>
-</div>
-</div>
-<h4 id="current-standard-in-ml">Current Standard in ML</h4>
-<p>We typically want to maximize the likelihood of observing <span class="math inline">\(\mathcal{D}_n\)</span> under given parameters <span class="citation" data-cites="murphy2022probabilistic">[@murphy2022probabilistic]</span>:</p>
-<p><span id="eq-mle"><span class="math display">\[
-\theta^* = \arg \max_{\theta} p(\mathcal{D}_n|\theta)
-\qquad(1)\]</span></span></p>
-<p>Compute an MLE (or MAP) point estimate <span class="math inline">\(\hat\theta = \mathbb{E} \theta^*\)</span> and use <strong>plugin</strong> approximation for prediction:</p>
-<p><span id="eq-plugin"><span class="math display">\[
-p(y|x,\mathcal{D}_n) \approx p(y|x,\hat\theta)
-\qquad(2)\]</span></span></p>
-<ul>
-<li>In an ideal world we can just use parsimonious and interpretable models like GLM <span class="citation" data-cites="rudin2019stop">[@rudin2019stop]</span>, for which in many cases we can rely on asymptotic properties of <span class="math inline">\(\theta\)</span> to quantify uncertainty.</li>
-<li>In practice these models often have performance limitations.</li>
-<li>Black-box models like deep neural networks are popular, but they are also the very opposite of parsimonious.</li>
-</ul>
-<h4 id="objective">Objective</h4>
-</section>
-<section id="towards-trustworthy-ai-2" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
-<h2 data-id="quarto-animate-title">Towards Trustworthy AI</h2>
-<div class="r-hstack" style="text-align: center;">
-<div data-id="box3" style="background: #389826; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center; opacity: 0.5;">
-<p>Ground Truthing</p>
-</div>
-<div data-id="box2" style="background: #cb3c33; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center;">
-<p>Probabilistic Models</p>
-</div>
-<div data-id="box1" style="background: #9558b2; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center; opacity: 0.5;">
-<p>Counterfactual Reasoning</p>
-</div>
-</div>
-<h4 id="objective-1">Objective</h4>
-<p>. . .</p>
-<blockquote>
-<p>[…] deep neural networks are typically very underspecified by the available data, and […] parameters [therefore] correspond to a diverse variety of compelling explanations for the data. <span class="citation" data-cites="wilson2020case">[@wilson2020case]</span></p>
-</blockquote>
-<p>In this setting it is often crucial to treat models probabilistically!</p>
-<p><span id="eq-bma"><span class="math display">\[
-p(y|x,\mathcal{D}_n) = \int p(y|x,\theta)p(\theta|\mathcal{D}_n)d\theta
-\qquad(3)\]</span></span></p>
-</section>
-<section id="towards-trustworthy-ai-3" class="slide level2" data-auto-animate="true" data-auto-animate-easing="ease-in-out">
-<h2 data-id="quarto-animate-title">Towards Trustworthy AI</h2>
-<div class="r-hstack">
-<div data-id="box3" style="background: #389826; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center; opacity: 0.5;">
-<p>Ground Truthing</p>
-</div>
-<div data-id="box2" style="background: #cb3c33; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center; opacity: 0.5;">
-<p>Probabilistic Models</p>
-</div>
-<div data-id="box1" style="background: #9558b2; width: 150px; height: 150px; border-radius: 50%; display: grid; place-content: center; text-align: center; align-items: center;">
-<p>Counterfactual Reasoning</p>
-</div>
-</div>
-<blockquote>
-<p>We can now make predictions – great! But do we know how the predictions are actually being made?</p>
-</blockquote>
-<div class="fragment">
-<h4 id="objective-2">Objective</h4>
-<p>With the model trained for its task, we are interested in understanding how its predictions change in response to input changes.</p>
-<p><span id="eq-ce-objective"><span class="math display">\[
-\nabla_x p(y|x,\mathcal{D}_n;\hat\theta)
-\qquad(4)\]</span></span></p>
-<div>
-<ul>
-<li class="fragment">Counterfactual reasoning (in this context) boils down to simple questions: what if <span class="math inline">\(x\)</span> (factual) <span class="math inline">\(\Rightarrow\)</span> <span class="math inline">\(x\prime\)</span> (counterfactual)?</li>
-<li class="fragment">By strategically perturbing features and checking the model output, we can (begin to) understand how the model makes its decisions.</li>
-<li class="fragment">Counterfactual Explanations always have full fidelity by construction (as opposed to surrogate explanations, for example).</li>
-</ul>
-</div>
-<p>. . .</p>
-<blockquote>
-<p>Important to realize that we are keeping <span class="math inline">\(\hat\theta\)</span> constant!</p>
-</blockquote>
-</div>
-</section>
-<section id="todays-talk" class="slide level2" data-background-color="#ffffff" data-background-size="30%" data-background-position="98% 98%" data-background-image="images/cfa_logo_color.svg">
-<h2>Today’s talk</h2>
-<ol type="1">
-<li>🔮 Explaining Black-Box Models through Counterfactuals (<span class="math inline">\(\approx\)</span> 10min)
-<ul>
-<li>What are they? What are they not?</li>
-<li>Counterfactual Explanations in the broader XAI landscape</li>
-<li>From Counterfactual Explanations to Algorithmic Recourse</li>
-</ul></li>
-<li>🛠️ Hands-on examples — <code>CounterfactualExplanations.jl</code> in Julia (<span class="math inline">\(\approx\)</span> 15min)</li>
-<li>📊 Endogenous Macrodynamics in Algorithmic Recourse (<span class="math inline">\(\approx\)</span> 10min)</li>
-<li>❓ Q&amp;A (<span class="math inline">\(\approx\)</span> 10min)</li>
-<li>🚀 Related Research Topics (<span class="math inline">\(\approx\)</span> 10min)
-<ul>
-<li>Predictive Uncertainty Quantification</li>
-</ul></li>
-</ol>
+<center>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCrTLEbE7N5h6dkDkPshTN9ksAqSIPtDTyXNjSiovCHeOu8g/viewform?embedded=true" width="640" height="660" frameborder="0" marginheight="0" marginwidth="0">
+Loading…
+</iframe>
+</center>
+<!--
+#########################################
+Section: Effect Size Years of Learning 
+#########################################
+-->
 </section></section>
 <section>
-<section id="explaining-black-box-models-through-counterfactuals" class="title-slide slide level1 center" data-background-image="images/cfa_logo_color.svg">
-<h1>Explaining Black-Box Models through Counterfactuals 🔮</h1>
-
+<section id="effect-size" class="title-slide slide level1">
+<h1>Effect Size</h1>
+<ul>
+<li>Following <span class="citation" data-cites="Yen:1986">Yen (<a href="#/section-6" role="doc-biblioref" onclick="">1986</a>)</span> and <span class="citation" data-cites="DadeBrig:2012">Dadey and Briggs (<a href="#/section-6" role="doc-biblioref" onclick="">2012</a>)</span> cross-grade, effect size is defined as the standardized mean difference between <em>grade x content area</em> means (<span class="math inline">\(g1\)</span> and <span class="math inline">\(g2\)</span>) using the pooled standard deviation:</li>
+</ul>
+<p><span id="eq-effect-size"><span class="math display">\[
+\textsf{Effect Size} \equiv \frac{\overline{X}_{g1} - \overline{X}_{g2}}{\sqrt{\frac{\hat{ \sigma}^2_{g1} + \hat{ \sigma}^2_{g2}}{2}}}
+\tag{1}\]</span></span></p>
+<ul>
+<li>Note, in order for this mean difference in the numerator to make sense, we must have a scale (i.e., a vertical scale or developmental scale) that allows for the subtraction of scaled scores.</li>
+<li>The effect size quantifies the extent to which the mean has shifted between the two scaled score distributions.</li>
+<li>There will be considerable overlap in the students in <span class="math inline">\(g1\)</span> and <span class="math inline">\(g2\)</span> in most applications of <a href="#/effect-size">Equation&nbsp;1</a> to state summative assessment data. However, there is no requirement that <span class="math inline">\(g1\)</span> and <span class="math inline">\(g2\)</span> consist of the same students (e.g., NAEP).</li>
+</ul>
 </section>
-<section id="a-framework-for-counterfactual-explanations" class="slide level2">
-<h2>A Framework for Counterfactual Explanations</h2>
-<blockquote>
-<p>Even though […] interpretability is of great importance and should be pursued, explanations can, in principle, be offered without opening the “black box”. <span class="citation" data-cites="wachter2017counterfactual">[@wachter2017counterfactual]</span></p>
-</blockquote>
+<section id="effect-size-illustration" class="slide level2">
+<h2>Effect Size Illustration</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<h4 id="framework">Framework</h4>
-<p>. . .</p>
-<p>Objective originally proposed by <span class="citation" data-cites="wachter2017counterfactual">@wachter2017counterfactual</span> is as follows</p>
-<p><span id="eq-obj"><span class="math display">\[
-\min_{x\prime \in \mathcal{X}} h(x\prime) \ \ \ \mbox{s. t.} \ \ \ M(x\prime) = t
-\qquad(5)\]</span></span></p>
-<p>where <span class="math inline">\(h\)</span> relates to the complexity of the counterfactual and <span class="math inline">\(M\)</span> denotes the classifier.</p>
-<p>. . .</p>
-<p>Typically this is approximated through regularization:</p>
-<p><span id="eq-solution"><span class="math display">\[
-x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) + \lambda h(x\prime)
-\qquad(6)\]</span></span></p>
-</div><div class="column" style="width:50%;">
-<h4 id="intuition">Intuition</h4>
-<p>. . .</p>
-<div id="fig-cat-mlp" class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/juliatrustworthyai/CounterfactualExplanations.jl/main/docs/src/www/recourse_mlp.gif"></p>
-<figcaption>Figure&nbsp;2: A cat performing gradient descent in the feature space à la <span class="citation" data-cites="wachter2017counterfactual">@wachter2017counterfactual</span>.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="counterfactuals-as-in-adversarial-examples" class="slide level2">
-<h2>Counterfactuals … as in Adversarial Examples?</h2>
-<div class="columns">
-<div class="column" style="width:25%;">
-<blockquote>
-<p>Yes and no!</p>
-</blockquote>
-<p>While both are methodologically very similar, adversarial examples are meant to go undetected while CEs ought to be meaningful.</p>
-<p><img data-src="images/cfa_logo_color.png"></p>
-</div><div class="column" style="width:75%;">
-<h3 id="desiderata">Desiderata</h3>
+<div class="column" style="width:35%;">
 <div>
 <ul>
-<li class="fragment"><strong>closeness</strong>: the average distance between factual and counterfactual features should be small (<span class="citation" data-cites="wachter2017counterfactual">@wachter2017counterfactual</span>)</li>
-<li class="fragment"><strong>actionability</strong>: the proposed feature perturbation should actually be actionable (<span class="citation" data-cites="ustun2019actionable">@ustun2019actionable</span>, <span class="citation" data-cites="poyiadzi2020face">@poyiadzi2020face</span>)</li>
-<li class="fragment"><strong>plausibility</strong>: the counterfactual explanation should be plausible to a human (<span class="citation" data-cites="joshi2019realistic">@joshi2019realistic</span>)</li>
-<li class="fragment"><strong>unambiguity</strong>: a human should have no trouble assigning a label to the counterfactual (<span class="citation" data-cites="schut2021generating">@schut2021generating</span>)</li>
-<li class="fragment"><strong>sparsity</strong>: the counterfactual explanation should involve as few individual feature changes as possible (<span class="citation" data-cites="schut2021generating">@schut2021generating</span>)</li>
-<li class="fragment"><strong>robustness</strong>: the counterfactual explanation should be robust to domain and model shifts (<span class="citation" data-cites="upadhyay2021robust">@upadhyay2021robust</span>)</li>
-<li class="fragment"><strong>diversity</strong>: ideally multiple diverse counterfactual explanations should be provided (<span class="citation" data-cites="mothilal2020explaining">@mothilal2020explaining</span>)</li>
-<li class="fragment"><strong>causality</strong>: counterfactual explanations reflect the structural causal model underlying the data generating process (<span class="citation" data-cites="karimi2020algorithmic">@karimi2020algorithmic</span>, <span class="citation" data-cites="karimi2021algorithmic">@karimi2021algorithmic</span>)</li>
+<li class="fragment">Figure shows effect size for matched grade 3 to 4 students in mathematics.</li>
+<li class="fragment">Mean scaled score increase of 35 (461 to 496).</li>
+<li class="fragment">Effect size increase of 0.41.</li>
+<li class="fragment">Note: This effect size change is applicable to the entire group of students but not, in general, to individual students.</li>
+<li class="fragment">Why?</li>
 </ul>
 </div>
+</div><div class="column" style="padding-left: 200px; vertical-align: middle;">
+<p><img data-src="images/Effect_Size_SGP_Plot_1.svg" style="width:100.0%"></p>
 </div>
 </div>
 </section>
-<section id="counterfactuals-as-in-causal-inference" class="slide level2">
-<h2>Counterfactuals … as in Causal Inference?</h2>
-<blockquote>
-<p>NO!</p>
-</blockquote>
+<section id="effect-size-illustration-1" class="slide level2">
+<h2>Effect Size Illustration</h2>
 <div class="columns">
-<div class="column" style="width:60%;">
-<p><strong>Causal inference</strong>: counterfactuals are thought of as unobserved states of the world that we would like to observe in order to establish causality.</p>
-<ul>
-<li>The only way to do this is by actually interfering with the state of the world: <span class="math inline">\(p(y|do(x),\theta)\)</span>.</li>
-<li>In practice we can only move some individuals to the counterfactual state of the world and compare their outcomes to a control group.</li>
-<li>Provided we have controlled for confounders, properly randomized, … we can estimate an average treatment effect: <span class="math inline">\(\hat\theta\)</span>.</li>
-</ul>
-<p><strong>Counterfactual Explanations</strong>: involves perturbing features <strong>after</strong> some model has been trained.</p>
-<ul>
-<li>We end up comparing <strong>modeled outcomes</strong> <span class="math inline">\(p(y|x,\hat\phi)\)</span> and <span class="math inline">\(p(y|x\prime,\hat\phi)\)</span> for individuals.</li>
-<li>We have <strong>not</strong> magically solved causality.</li>
-</ul>
-</div><div class="column" style="width:40%;">
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-The number of ostensibly pro data scientists confusing themselves into believing that "counterfactual explanations" capture real-world causality is just staggering🤦‍♀️. Where do we go from here? How can a community that doesn't even understand what's already known make advances?
-</p>
-— Zachary Lipton (@zacharylipton) <a href="https://twitter.com/zacharylipton/status/1538952312781168640?ref_src=twsrc%5Etfw">June 20, 2022</a>
-</blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-</div>
-</section>
-<section id="from-counterfactual-explanations-to-algorithmic-recourse" class="slide level2">
-<h2>From Counterfactual Explanations to Algorithmic Recourse</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<blockquote>
-<p>“You cannot appeal to (algorithms). They do not listen. Nor do they bend.”</p>
-<p>— Cathy O’Neil in <a href="https://en.wikipedia.org/wiki/Weapons_of_Math_Destruction"><em>Weapons of Math Destruction</em></a>, 2016</p>
-</blockquote>
-<div id="fig-cathy" class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png" style="width:60.0%"></p>
-<figcaption>Figure&nbsp;3: Cathy O’Neil. Source: Cathy O’Neil a.k.a. <a href="https://mathbabe.org/contact/">mathbabe</a>.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:60%;">
-<h3 id="algorithmic-recourse">Algorithmic Recourse</h3>
-<p>. . .</p>
-<ul>
-<li><span class="citation" data-cites="oneil2016weapons">@oneil2016weapons</span> points to various real-world involving black-box models and affected individuals facing adverse outcomes.</li>
-</ul>
-<p>. . .</p>
-<ul>
-<li>These individuals generally have no way to challenge their outcome.</li>
-</ul>
-<p>. . .</p>
-<blockquote>
-<p>Counterfactual Explanations that involve <strong>actionable and realistic</strong> feature perturbations can be used for the purpose of <strong>Algorithmic Recourse</strong>.</p>
-</blockquote>
-</div>
-</div>
-</section></section>
-<section>
-<section id="counterfactualexplanations.jl-in-julia" class="title-slide slide level1 center" data-background-color="#ffffff" data-background-size="15%" data-background-position="95% 95%" data-background-image="images/cfa_logo_color.png">
-<h1><a href="https://www.paltmeyer.com/CounterfactualExplanations.jl/stable/"><code>CounterfactualExplanations.jl</code></a> in Julia 🛠️</h1>
-
-</section>
-<section id="counterfactualexplanations.jl" class="slide level2">
-<h2><a href="https://www.paltmeyer.com/CounterfactualExplanations.jl/stable/"><code>CounterfactualExplanations.jl</code></a> 📦</h2>
-<p><a href="https://juliatrustworthyai.github.io/CounterfactualExplanations.jl/stable"><img data-src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable"></a> <a href="https://juliatrustworthyai.github.io/CounterfactualExplanations.jl/dev"><img data-src="https://img.shields.io/badge/docs-dev-blue.svg" alt="Dev"></a> <a href="https://github.com/juliatrustworthyai/CounterfactualExplanations.jl/actions/workflows/CI.yml?query=branch%3Amain"><img data-src="https://github.com/juliatrustworthyai/CounterfactualExplanations.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status"></a> <a href="https://codecov.io/gh/juliatrustworthyai/CounterfactualExplanations.jl"><img data-src="https://codecov.io/gh/juliatrustworthyai/CounterfactualExplanations.jl/branch/main/graph/badge.svg" alt="Coverage"></a> <a href="https://github.com/invenia/BlueStyle"><img data-src="https://img.shields.io/badge/code%20style-blue-4495d1.svg" alt="Code Style: Blue"></a> <a href="https://github.com/SciML/ColPrac"><img data-src="https://img.shields.io/badge/ColPrac-Contributor's%20Guide-blueviolet.png" alt="ColPrac: Contributor’s Guide on Collaborative Practices for Community Packages"></a></p>
-<div class="columns">
-<div class="column" style="width:50%;">
+<div class="column" style="width:35%;">
 <div>
 <ul>
-<li class="fragment">A unifying framework for generating Counterfactual Explanations.</li>
-<li class="fragment">Fast, extensible and composable allowing users and developers to add and combine different counterfactual generators.</li>
-<li class="fragment">Implements a number of SOTA generators.</li>
-<li class="fragment">Built in Julia, but can be used to explain models built in R and Python (still experimental).</li>
-<li class="fragment">Status 🔁: ready for research, not production. Thought/challenge/contributions welcome!</li>
+<li class="fragment">Increase in attainment is <em>not</em> uniform by prior attainment (i.e., gains correlate with initial achievement).</li>
+<li class="fragment">Figure shows two regions:
+<ul>
+<li class="fragment"><span style="color: blue;">Individual gains above effect size.</span></li>
+<li class="fragment"><span style="color: red">Individual gains below effect size.</span></li>
+</ul></li>
+<li class="fragment">Bottom axis includes decile cuts for Grade 3 scaled score.</li>
+<li class="fragment">In lowest decile, 74.4% of students had gains exceeding the effect size. In highest decile, 15.7% had gains exceeding the effect size.</li>
+<li class="fragment"><em>Reductio ad absurdum</em></li>
 </ul>
 </div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_full_color.png" style="width:80.0%"></p>
-<figcaption>Photo by <a href="https://unsplash.com/@dmjdenise?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Denise Jans</a> on <a href="https://unsplash.com/s/photos/rubiks-cube?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="fragment">
-<blockquote>
-<p>Julia has an edge with respect to Trustworthy AI: it’s open-source, uniquely transparent and interoperable 🔴🟢🟣</p>
-</blockquote>
-</div>
-</section>
-<section id="a-simple-example" class="slide level2">
-<h2>A simple example</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ol type="1">
-<li>Load and prepare some toy data.</li>
-<li>Select a random sample.</li>
-<li>Generate counterfactuals using different approaches.</li>
-</ol>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
+</div><div class="column" style="padding-left: 200px; vertical-align: middle;">
+<p><img data-src="images/Effect_Size_SGP_Plot_1a.svg" style="width:100.0%"></p>
 </div>
 </div>
 </section>
-<section id="generic-generator" class="slide level2">
-<h2>Generic Generator</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<h4 id="code">Code</h4>
-<p>. . .</p>
-<p>We begin by instantiating the fitted model …</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-<p>. . .</p>
-<p>… then based on its prediction for <span class="math inline">\(x\)</span> we choose the opposite label as our target …</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  </code></pre>
-</div>
-</div>
-<p>. . .</p>
-<p>… and finally generate the counterfactual.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<h4 id="output">Output</h4>
-<p>. . .</p>
-<blockquote>
-<p>… et voilà!</p>
-</blockquote>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-</div>
+<section id="empirical-results" class="slide level2">
+<h2>Empirical results</h2>
+<div>
+<ul>
+<li class="fragment">We examine effect size increases for unmatched and matched cohorts of students using data from 4 states.</li>
+<li class="fragment">All data are derived from assessment administrations occurring prior to the COVID-19 pandemic.</li>
+<li class="fragment">Using <a href="#/effect-size">Equation&nbsp;1</a> we calculate effect size changes for 1, 2, 3, and 4 years (provided enough years of data exist for the state).</li>
+<li class="fragment">Depending upon the number of years of data we have for a state, we can calculate effect size changes across several cohorts of students.</li>
+<li class="fragment">Results are summarized in the following figures.</li>
+</ul>
 </div>
 </section>
-<section id="probabilistic-methods-for-counterfactual-explanations" class="slide level2">
-<h2>Probabilistic Methods for Counterfactual Explanations</h2>
-<p>When people say that counterfactuals should look <strong>realistic</strong> or <strong>plausible</strong>, they really mean that counterfactuals should be generated by the same Data Generating Process (DGP) as the factuals:</p>
-<p><span class="math display">\[
-x\prime \sim p(x)
-\]</span></p>
-<p>But how do we estimate <span class="math inline">\(p(x)\)</span>? Two probabilistic approaches …</p>
-<div class="fragment">
+<section id="mathematics" class="slide level2">
+<h2>Mathematics</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">APPROACH 1: use the model itself</a></li><li><a href="#tabset-1-2">APPROACH 2: use some generative model</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">State A</a></li><li><a href="#tabset-1-2">State B</a></li><li><a href="#tabset-1-3">State C</a></li><li><a href="#tabset-1-4">State D</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><span class="citation" data-cites="schut2021generating">@schut2021generating</span> note that by maximizing predictive probabilities <span class="math inline">\(\sigma(M(x\prime))\)</span> for <strong>probabilistic</strong> models <span class="math inline">\(M\in\mathcal{\widetilde{M}}\)</span> one implicitly minimizes <strong>epistemic</strong> and <strong>aleotoric</strong> uncertainty.</p>
-<p><span id="eq-bayes"><span class="math display">\[
-x\prime = \arg \min_{x\prime}  \ell(M(x\prime),t) \ \ \ , \ \ \ M\in\mathcal{\widetilde{M}}
-\qquad(7)\]</span></span></p>
-</div><div class="column" style="width:50%;">
-<div id="fig-cat-laplace" class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/juliatrustworthyai/CounterfactualExplanations.jl/main/docs/src/www/recourse_laplace.gif" style="width:70.0%"></p>
-<figcaption>Figure&nbsp;4: A cat performing gradient descent in the feature space à la <span class="citation" data-cites="schut2021generating">@schut2021generating</span></figcaption>
-</figure>
-</div>
-</div>
-</div>
+<center>
+<img data-src="images/State_4/Effect_Size/cross_sectional_MATHEMATICS.svg" style="width:60.0%">
+</center>
 </div>
 <div id="tabset-1-2">
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Instead of perturbing samples directly, some have proposed to instead traverse a lower-dimensional latent embedding learned through a generative model <span class="citation" data-cites="joshi2019realistic">[@joshi2019realistic]</span>.</p>
-<p><span id="eq-latent"><span class="math display">\[
-z\prime = \arg \min_{z\prime}  \ell(M(dec(z\prime)),t) + \lambda h(x\prime)
-\qquad(8)\]</span></span></p>
-<p>and</p>
-<p><span class="math display">\[x\prime = dec(z\prime)\]</span></p>
-<p>where <span class="math inline">\(dec(\cdot)\)</span> is the decoder function.</p>
-</div><div class="column" style="width:50%;">
-<div id="fig-latent-3d" class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png" style="width:80.0%"></p>
-<figcaption>Figure&nbsp;5: Counterfactual (yellow) generated through latent space search (right panel) following <span class="citation" data-cites="joshi2019realistic">@joshi2019realistic</span>. The corresponding counterfactual path in the feature space is shown in the left panel.</figcaption>
-</figure>
+<center>
+<img data-src="images/State_3/Effect_Size/cross_sectional_MATHEMATICS.svg" style="width:60.0%">
+</center>
 </div>
+<div id="tabset-1-3">
+<center>
+<img data-src="images/State_2/Effect_Size/cross_sectional_MATHEMATICS.svg" style="width:60.0%">
+</center>
 </div>
-</div>
-</div>
+<div id="tabset-1-4">
+<center>
+<img data-src="images/State_1/Effect_Size/cross_sectional_MATHEMATICS.svg" style="width:60.0%">
+</center>
 </div>
 </div>
 </div>
 </section>
-<section id="greedy-generator" class="slide level2">
-<h2>Greedy Generator</h2>
+<section id="ela" class="slide level2">
+<h2>ELA</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">State A</a></li><li><a href="#tabset-2-2">State B</a></li><li><a href="#tabset-2-3">State C</a></li><li><a href="#tabset-2-4">State D</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<center>
+<img data-src="images/State_4/Effect_Size/cross_sectional_ELA.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-2-2">
+<center>
+<img data-src="images/State_3/Effect_Size/cross_sectional_ELA.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-2-3">
+<center>
+<img data-src="images/State_2/Effect_Size/cross_sectional_READING.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-2-4">
+<center>
+<img data-src="images/State_1/Effect_Size/cross_sectional_READING.svg" style="width:60.0%">
+</center>
+</div>
+</div>
+</div>
+</section>
+<section id="lets-summarize" class="slide level2">
+<h2>Let’s Summarize</h2>
+<div>
+<ul>
+<li class="fragment">The effect size approach to quantifying a year’s worth of learning depends on:
+<ul>
+<li class="fragment">the assessment that is administered,</li>
+<li class="fragment">the population of students to whom the assessment is administered,</li>
+<li class="fragment">the year in which the assessment is administered,</li>
+<li class="fragment">the content area of the assessment,</li>
+<li class="fragment">the grade level of the assessment, and</li>
+<li class="fragment">the psychometric design used to scale and construct the assessment.</li>
+<li class="fragment">Moreover, the calculated effect size is only a system level average and is not applicable for determinations of a year’s worth of learning at the individual level.</li>
+</ul></li>
+<li class="fragment">This list of dependencies is as bad as the list we’d put together for any indicator derived from assessments.<br>
+</li>
+</ul>
+</div>
+</section>
+<section id="yikes" class="slide level2" data-transition="fade">
+<h2>Yikes!!!</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Hard to call this rule anything but just <span style="color: red">BAD</span></li>
+<li>The assumptions (3 grade levels per standard deviation) don’t hold.</li>
+<li>Gives rise to misleading statements, especially for parents concerned about their children.<br>
+</li>
+<li>Not good. We should do better.</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<center>
+<span style="font-size: 150px; color: #26a7de">Rule of 27</span>
+</center>
+<p></p><div id="tweet-27483"></div><script>tweet={"url":"https:\/\/twitter.com\/AndrewDeanHo\/status\/1565345533866086402","author_name":"Andrew Ho","author_url":"https:\/\/twitter.com\/AndrewDeanHo","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EMy &quot;months of learning&quot; conversion uses what I call the &quot;Rule of 27,&quot; assuming 3 grade levels per standard deviation unit and 9 months in an academic year. Others can pick another rule! We review the vertical link that underlies this here: \u003Ca href=\"https:\/\/t.co\/R7qAWA7Sk0\"\u003Ehttps:\/\/t.co\/R7qAWA7Sk0\u003C\/a\u003E 6\/\u003C\/p\u003E&mdash; Andrew Ho (@AndrewDeanHo) \u003Ca href=\"https:\/\/twitter.com\/AndrewDeanHo\/status\/1565345533866086402?ref_src=twsrc%5Etfw\"\u003ESeptember 1, 2022\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-27483").innerHTML = tweet["html"];</script><p></p>
+</div>
+</div>
+<p>:::::</p>
+</section>
+<section id="section-5" class="slide level2" data-background-image="images/hope.jpg" data-background-size="cover" data-background-position="right">
+<h2></h2>
 <div class="columns">
 <div class="column" style="width:40%;">
-<h4 id="code-1">Code</h4>
-<p>. . .</p>
-<p>This time we use a Bayesian classifier …</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-<p>. . .</p>
-<p>… and once again choose our target label as before …</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-<p>. . .</p>
-<p>… to then finally use greedy search to find a counterfactual.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  0.07837333 -0.46100907  0.47004362  0.37409935 -0.43943804  0.49644490 -0.39117728  0.81303863  0.03163057 -1.22981469</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<h4 id="output-1">Output</h4>
-<p>. . .</p>
-<blockquote>
-<p>In this case the Bayesian approach yields a similar outcome.</p>
-</blockquote>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="latent-space-generator" class="slide level2">
-<h2>Latent Space Generator</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<h4 id="code-2">Code</h4>
-<p>. . .</p>
-<p>Using the same classifier as before we can either use the specific <code>REVISEGenerator</code> …</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-<p>. . .</p>
-<p>… or realize that that REVISE <span class="citation" data-cites="joshi2019realistic">[@joshi2019realistic]</span> just boils down to generic search in a latent space:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  </code></pre>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<h4 id="output-2">Output</h4>
-<p>. . .</p>
-<blockquote>
-<p>We have essentially combined latent search with a probabilistic classifier (as in <span class="citation" data-cites="antoran2020getting">@antoran2020getting</span>).</p>
-</blockquote>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  </code></pre>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="diverse-counterfactuals" class="slide level2">
-<h2>Diverse Counterfactuals</h2>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:40%;">
-<h4 id="code-3">Code</h4>
-<p>. . .</p>
-<p>We can use the <code>DiCEGenerator</code> to produce multiple diverse counterfactuals:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<h4 id="output-3">Output</h4>
-<p>. . .</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="a-real-world-example---credit-default" class="slide level2">
-<h2>A Real-World Example - Credit Default</h2>
-<ul>
-<li>The <strong>Give Me Some Credit</strong> dataset is publicly available from <a href="https://www.kaggle.com/competitions/GiveMeSomeCredit/leaderboard">Kaggle</a>.</li>
-</ul>
-<blockquote>
-<p>Improve on the state of the art in credit scoring by predicting the probability that somebody will experience financial distress in the next two years.</p>
-</blockquote>
-<ul>
-<li>We have <span class="math inline">\(y \in \{0=\text{no stress},1=\text{stress}\}\)</span> and a number of demographic and credit-related features <span class="math inline">\(X\)</span>.</li>
-</ul>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  0.328339512 -0.002135704  0.289492054  0.616772281 -1.019702088 -0.091856863  0.117467116 -0.585557380 -0.032799089 -0.028464114</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-</section>
-<section id="ignoring-mutability" class="slide level2">
-<h2>Ignoring Mutability</h2>
-<p>Using <strong>DiCE</strong> to generate counterfactuals for a single individual, ignoring actionability:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
 
-<img data-src="Years_of_Learning_Staff_Sharing_May_2023_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch"></section>
-<section id="respecting-mutability" class="slide level2">
-<h2>Respecting Mutability</h2>
-<p>Using the generic generator to generate counterfactuals for multiple individuals, respecting that <code>age</code> cannot be decreased (you might argue that <code>age</code> also cannot be easily increased …):</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  0.16677259  0.02889741 -0.32035777 -0.82787494  0.47511804  0.69320479  0.82366567 -2.52462969 -0.99564311  1.14298003</code></pre>
+</div><div class="column">
+<p><span style="font-size: 200px">Is there any</span></p>
 </div>
 </div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>  speed dist
-1     4    2
-2     4   10
-3     7    4
-4     7   22
-5     8   16
-6     9   10</code></pre>
-</div>
-</div>
-
-<img data-src="Years_of_Learning_Staff_Sharing_May_2023_files/figure-revealjs/unnamed-chunk-27-1.png" width="960" class="r-stretch"></section></section>
-<section>
-<section id="endogenous-macrodynamics-in-algorithmic-recourse" class="title-slide slide level1 center" data-background-image="images/cfa_logo_grey.png">
-<h1><a href="https://anonymous.4open.science/r/AlgorithmicRecourseDynamics/README.md">Endogenous Macrodynamics in Algorithmic Recourse</a> 📊</h1>
-
 </section>
-<section id="motivation" class="slide level2">
-<h2>Motivation</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<blockquote>
-<p><strong>TL;DR</strong>: We find that standard implementation of various SOTA approaches to AR can induce substantial domain and model shifts. We argue that these dynamics indicate that individual recourse generates hidden external costs and provide mitigation strategies.</p>
-</blockquote>
-<p>In this work we investigate what happens if Algorithmic Recourse is actually implemented by a large number of individuals.</p>
-<p><a href="#/motivation">Figure&nbsp;6</a> illustrates what we mean by Endogenous Macrodynamics in Algorithmic Recourse:</p>
+<section id="yes" class="slide level2">
+<h2>Yes!</h2>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Mean</a></li><li><a href="#tabset-3-2">Conditional Mean</a></li><li><a href="#tabset-3-3">Conditional Median</a></li><li><a href="#tabset-3-4">Conditional Decile</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<center>
+<img data-src="images/Effect_Size_SGP_Plot_1b.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-3-2">
+<center>
+<img data-src="images/Effect_Size_SGP_Plot_2.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-3-3">
+<center>
+<img data-src="images/Effect_Size_SGP_Plot_3a.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-3-4">
+<center>
+<img data-src="images/Effect_Size_SGP_Plot_3.svg" style="width:60.0%">
+</center>
+</div>
+</div>
+</div>
+</section>
+<section id="how" class="slide level2">
+<h2>How?</h2>
+<div>
 <ul>
-<li>Panel (a): we have a simple linear classifier trained for binary classification where samples from the negative class (y=0) are marked in blue and samples of the positive class (y=1) are marked in orange</li>
-<li>Panel (b): the implementation of AR for a random subset of individuals leads to a noticable domain shift</li>
-<li>Panel (c): as the classifier is retrained we observe a corresponding model shift <span class="citation" data-cites="upadhyay2021robust">[@upadhyay2021robust]</span></li>
-<li>Panel (d): as this process is repeated, the decision boundary moves away from the target class.</li>
+<li class="fragment">Year’s worth of learning is implicitly a norm-referenced quantity based upon average student performance.</li>
+<li class="fragment">As such, one can employ regression based approaches to better formalize the concept.</li>
+<li class="fragment">Attempts to reduce a year’s worth of learning to an effect size are a clumsy, scaled-based attempt to address the question.</li>
+<li class="fragment">As a norm-referenced quantity, SGPs can be utilized to define a year’s worth of learning to be 50th percentile growth.</li>
+<li class="fragment">This is consistent with the effect size approach to defining change and avoids all of the shortcomings mentioned.</li>
+<li class="fragment">The next section explores the consequences of this.</li>
 </ul>
-</div><div class="column" style="width:40%;">
-<div id="fig-poc" class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png" style="width:70.0%"></p>
-<figcaption>Figure&nbsp;6: Proof of concept: repeated implementation of AR leads to domain and model shifts.</figcaption>
-</figure>
 </div>
-<blockquote>
-<p>We argue that these shifts should be considered as an expected external cost of individual recourse and call for a paradigm shift from individual to collective recourse in these types of situations.</p>
-</blockquote>
-</div>
-</div>
-</section>
-<section id="generalised-framework" class="slide level2">
-<h2>Generalised Framework</h2>
-<h4 id="from-individual-recourse">From individual recourse …</h4>
-<p>We restate <a href="#/a-framework-for-counterfactual-explanations">Equation&nbsp;6</a> to encapsulate latent space search:</p>
-<p><span id="eq-general"><span class="math display">\[
-\begin{aligned}
-\mathbf{s}^\prime &amp;= \arg \min_{\mathbf{s}^\prime \in \mathcal{S}} \left\{  {\text{yloss}(M(f(\mathbf{s}^\prime)),y^*)}+ \lambda {\text{cost}(f(\mathbf{s}^\prime)) }  \right\}
-\end{aligned}
-\qquad(9)\]</span></span></p>
-<h4 id="towards-collective-recourse">… towards collective recourse</h4>
-<p>We borrow the notion of <strong>negative externalities</strong> from Economics, to formalise the idea that individual recourse fails to account for external costs:</p>
-<p><span id="eq-collective"><span class="math display">\[
-\begin{aligned}
-\mathbf{s}^\prime &amp;= \arg \min_{\mathbf{s}^\prime \in \mathcal{S}} \{ {\text{yloss}(M(f(\mathbf{s}^\prime)),y^*)} \\ &amp;+ \lambda_1 {\text{cost}(f(\mathbf{s}^\prime))} + \lambda_2 {\text{extcost}(f(\mathbf{s}^\prime))} \}
-\end{aligned}
-\qquad(10)\]</span></span></p>
-</section>
-<section id="findings" class="slide level2">
-<h2>Findings</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png" style="width:70.0%"></p>
-<figcaption>Results for synthetic data.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_grey.png" style="width:70.0%"></p>
-<figcaption>Results for real-word data.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="mitigation-strategies" class="slide level2">
-<h2>Mitigation Strategies</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ol type="1">
-<li>Choose more conservative decision thresholds.</li>
-<li>Classifer Preserving ROAR (ClaPROAR): penalise classifier loss.</li>
-</ol>
-<p><span id="eq-clap"><span class="math display">\[
-\begin{aligned}
-\text{extcost}(f(\mathbf{s}^\prime)) = l(M(f(\mathbf{s}^\prime)),y^\prime)
-\end{aligned}
-\qquad(11)\]</span></span></p>
-<ol start="3" type="1">
-<li>Gravitational Counterfactual Explanations: penalise distance to some sensible point in the target domain.</li>
-</ol>
-<p><span id="eq-grav"><span class="math display">\[
-\begin{aligned}
-\text{extcost}(f(\mathbf{s}^\prime)) = \text{dist}(f(\mathbf{s}^\prime),\bar{x})  
-\end{aligned}
-\qquad(12)\]</span></span></p>
-</div><div class="column" style="width:50%;">
-<div id="fig-mit" class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png"></p>
-<figcaption>Figure&nbsp;7: Illustrative example demonstrating the properties of the various mitigation strategies. Samples from the negative class <span class="math inline">\((y = 0)\)</span> are marked in blue while samples of the positive class <span class="math inline">\((y = 1)\)</span> are marked in orange.</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png" style="width:50.0%"></p>
-<figcaption>Mitigation strategies applied to synthetic data.</figcaption>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png" style="width:50.0%"></p>
-<figcaption>Mitigation strategies applied to real-world data.</figcaption>
-</figure>
-</div>
-</div>
-</div>
+<!--
+#########################################
+Section: SGP & Years of Learning 
+#########################################
+-->
 </section></section>
-<section id="questions-answers" class="title-slide slide level1 center" data-background-color="#ffffff" data-background-size="20%" data-background-position="98% 98%" data-background-image="images/cfa_logo_color.svg">
-<h1>Questions &amp; Answers ❓</h1>
-
-</section>
-
 <section>
-<section id="related-research-topics" class="title-slide slide level1 center" data-background-image="images/cfa_logo_color.png">
-<h1>Related Research Topics 🎯</h1>
-
+<section id="sgp-years-of-learning" class="title-slide slide level1" data-background-image="images/measuring_tape.jpg" data-background-size="cover" data-background-position="right">
+<h1>SGP &amp; Years of Learning</h1>
+<div>
+<ul>
+<li class="fragment">We investigate the relationship between growth norms and year’s of learning.</li>
+<li class="fragment">To do so, we exploit the the properties of the vertical scale.
+<ul>
+<li class="fragment">A vertical scale purports to produce a score scale capable of providing comparable, cross-grade, scaled scores for a given content area across the range of achievement.</li>
+<li class="fragment">For example, a vertical scale support scale score subtraction.</li>
+</ul></li>
+<li class="fragment">The goal is to quantify year’s of learning in terms of an SGP.
+<ul>
+<li class="fragment">What SGP is associated with 2 years of learning?</li>
+<li class="fragment">What SGP is associated with 3 years of learning?</li>
+<li class="fragment">What SGP is associated with no learning (or zero years of learning).</li>
+</ul></li>
+</ul>
+</div>
 </section>
-<section id="effortless-bayesian-deep-learning-through-laplace-redux" class="slide level2">
-<h2><a href="https://pretalx.com/juliacon-2022/talk/Z7MXFS/">Effortless Bayesian Deep Learning through Laplace Redux</a></h2>
-<p><a href="https://juliatrustworthyai.github.io/LaplaceRedux.jl/stable"><img data-src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable"></a> <a href="https://juliatrustworthyai.github.io/LaplaceRedux.jl/dev"><img data-src="https://img.shields.io/badge/docs-dev-blue.svg" alt="Dev"></a> <a href="https://github.com/juliatrustworthyai/LaplaceRedux.jl/actions/workflows/CI.yml?query=branch%3Amain"><img data-src="https://github.com/juliatrustworthyai/LaplaceRedux.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status"></a> <a href="https://codecov.io/gh/juliatrustworthyai/LaplaceRedux.jl"><img data-src="https://codecov.io/gh/juliatrustworthyai/LaplaceRedux.jl/branch/main/graph/badge.svg" alt="Coverage"></a></p>
+<section id="analyses" class="slide level2">
+<h2>Analyses</h2>
+<div>
+<ul>
+<li class="fragment">We examine the relationship between mean SGP and year’s of learning using pre-pandemic, vertically scaled, pre-pandemic, longitudinal data from 4 states as follows:
+<ul>
+<li class="fragment">One year’s growth (for a one year span of time) is defined as 50th percentile growth. This is a <em>normal</em> SGP.</li>
+<li class="fragment">Two year’s growth (in one year) is calculated empirically by running individual data spanning two years (e.g.&nbsp;grade 3 to 5 data) through one-year growth norms (e.g., grade 3 to 4 growth norms).</li>
+<li class="fragment">Three year’s growth (in one year) is calculated empirically by running individual data spanning three years (e.g.&nbsp;grade 3 to 6 data) through one-year growth norms (e.g., grade 3 to 4 growth norms).</li>
+<li class="fragment">No growth (in one year) is calculated by running individual data with no increase in scaled score through the one-year growth norms (e.g., grade 3 to 4 growth norms).</li>
+<li class="fragment">I also calculated half-year growth (in one year) by running individual data spanning a single year (e.g., grade 3 to 4 data) through two-year growth norms(e.g., grade 3 to 5 growth norms).</li>
+</ul></li>
+<li class="fragment">Results are summarized in the following figures.</li>
+</ul>
+</div>
+</section>
+<section id="sgp-by-years-of-learning-mathematics" class="slide level2">
+<h2>SGP by Years of Learning: Mathematics</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">State A</a></li><li><a href="#tabset-4-2">State B</a></li><li><a href="#tabset-4-3">State C</a></li><li><a href="#tabset-4-4">State D</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<center>
+<img data-src="images/State_4/SGP/cross_sectional_MATHEMATICS.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-4-2">
+<center>
+<img data-src="images/State_3/SGP/cross_sectional_MATHEMATICS.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-4-3">
+<center>
+<img data-src="images/State_2/SGP/cross_sectional_MATHEMATICS.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-4-4">
+<center>
+<img data-src="images/State_1/SGP/cross_sectional_MATHEMATICS.svg" style="width:60.0%">
+</center>
+</div>
+</div>
+</div>
+</section>
+<section id="sgp-by-years-of-learning-ela" class="slide level2">
+<h2>SGP by Years of Learning: ELA</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">State A</a></li><li><a href="#tabset-5-2">State B</a></li><li><a href="#tabset-5-3">State C</a></li><li><a href="#tabset-5-4">State D</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<center>
+<img data-src="images/State_4/SGP/cross_sectional_ELA.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-5-2">
+<center>
+<img data-src="images/State_3/SGP/cross_sectional_ELA.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-5-3">
+<center>
+<img data-src="images/State_2/SGP/cross_sectional_READING.svg" style="width:60.0%">
+</center>
+</div>
+<div id="tabset-5-4">
+<center>
+<img data-src="images/State_1/SGP/cross_sectional_READING.svg" style="width:60.0%">
+</center>
+</div>
+</div>
+</div>
+</section>
+<section id="back-to-the-survey-question" class="slide level2">
+<h2>Back to the survey question</h2>
+<ul>
+<li>Based upon the SGP analyses were you able to determine the correct answer to the question you answered?</li>
+</ul>
+<p><br></p>
+<center>
+<iframe width="932" height="626" seamless="" frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwQj8HRfbP1BZjWaEOzTzhnUYDF4q7Pl6YHgPlYWtdBITVE5VNEERp4i2QsWOiMr8bbhwUKt2RhVla/pubchart?oid=153557030&amp;format=interactive">
+</iframe>
+</center>
+</section>
+<section id="startling-results" class="slide level2">
+<h2>Startling results</h2>
+<ul>
+<li>The results perplexed me when I ran the analyses a month ago.</li>
+<li>How is it possible for 60 or more percent of students making at least a year’s worth of learning to make two or more year’s worth of learning.
+<ul>
+<li>Are vertical scales this corrupt?</li>
+<li>Charlie DePascale called vertical scaling an interesting <em>parlor trick</em>.</li>
+</ul></li>
+</ul>
+<!--
+####################################
+Section: Summary and Questions
+####################################
+-->
+</section></section>
+<section id="summary-thoughts-preliminary" class="title-slide slide level1">
+<h1>Summary thoughts (preliminary)</h1>
+<ul>
+<li>Years of learning interpretations based upon effect-size calculations are a dead end.</li>
+<li>It’s not clear whether extending the effect size approach to utilize growth norms leads to coherent results.
+<ul>
+<li>It’s too easy to throw vertical scales under the bus. For adjacent grades, scaled scores should be close to exchangable.</li>
+</ul></li>
+<li>The possibility that student learning could be so “explosive” after reaching the year of learning threshold could have huge implications for educating students.</li>
+</ul>
+</section>
+
+<section id="section-6" class="title-slide slide level1 smaller scrollable">
+<h1></h1>
+<p><span style="font-size: 300px;">Questions?</span></p>
+<p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><code>LaplaceRedux.jl</code> (formerly <code>BayesLaplace.jl</code>) is a small package that can be used for effortless Bayesian Deep Learning and Logistic Regression trough Laplace Approximation. It is inspired by this Python <a href="https://aleximmer.github.io/Laplace/index.html#setup">library</a> and its companion <a href="https://arxiv.org/abs/2106.14806">paper</a>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/cfa_logo_color.png"></p>
-<figcaption>Plugin Approximation (left) and Laplace Posterior (right) for simple artificial neural network.</figcaption>
-</figure>
+<center>
+Project Website
+</center>
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="Years_of_Learning_Staff_Sharing_May_2023_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
+</div>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/juliatrustworthyai/LaplaceRedux.jl/main/dev/resources/juliacon22/www/intro.gif" style="width:70.0%"></p>
-<figcaption>Simulation of changing posteriour predictive distribution. Image by author.</figcaption>
-</figure>
+<center>
+Presentation
+</center>
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="Years_of_Learning_Staff_Sharing_May_2023_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
 </div>
 </div>
-</div>
-</section>
-<section id="conformalprediction.jl" class="slide level2">
-<h2><a href="https://github.com/juliatrustworthyai/ConformalPrediction.jl"><code>ConformalPrediction.jl</code></a></h2>
-<p><a href="https://juliatrustworthyai.github.io/ConformalPrediction.jl/stable/"><img data-src="https://img.shields.io/badge/docs-stable-blue.svg" alt="Stable"></a> <a href="https://juliatrustworthyai.github.io/ConformalPrediction.jl/dev/"><img data-src="https://img.shields.io/badge/docs-dev-blue.svg" alt="Dev"></a> <a href="https://github.com/juliatrustworthyai/ConformalPrediction.jl/actions/workflows/CI.yml?query=branch%3Amain"><img data-src="https://github.com/juliatrustworthyai/ConformalPrediction.jl/actions/workflows/CI.yml/badge.svg?branch=main" alt="Build Status"></a> <a href="https://codecov.io/gh/juliatrustworthyai/ConformalPrediction.jl"><img data-src="https://codecov.io/gh/juliatrustworthyai/ConformalPrediction.jl/branch/main/graph/badge.svg" alt="Coverage"></a> <a href="https://github.com/invenia/BlueStyle"><img data-src="https://img.shields.io/badge/code%20style-blue-4495d1.svg" alt="Code Style: Blue"></a> <a href="https://github.com/SciML/ColPrac"><img data-src="https://img.shields.io/badge/ColPrac-Contributor's%20Guide-blueviolet.png" alt="ColPrac: Contributor’s Guide on Collaborative Practices for Community Packages"></a> <a href="https://twitter.com/paltmey"><img data-src="https://img.shields.io/twitter/url/https/twitter.com/paltmey.svg?style=social&amp;label=Follow%20%40paltmey" alt="Twitter Badge"></a></p>
-<p><code>ConformalPrediction.jl</code> is a package for Uncertainty Quantification (UQ) through Conformal Prediction (CP) in Julia. It is designed to work with supervised models trained in <a href="https://alan-turing-institute.github.io/MLJ.jl/dev/">MLJ</a> <span class="citation" data-cites="blaom2020mlj">[@blaom2020mlj]</span>. Conformal Prediction is distribution-free, easy-to-understand, easy-to-use and model-agnostic.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://raw.githubusercontent.com/pat-alt/blog/main/posts/conformal-prediction/www/medium.gif"></p>
-<figcaption>Conformal Prediction in action: Prediction sets for two different samples and changing coverage rates. As coverage grows, so does the size of the prediction sets.</figcaption>
-</figure>
-</div>
-</section>
-<section id="more-resources" class="slide level2">
-<h2>More Resources 📚</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<blockquote>
-<p>Read on …</p>
-</blockquote>
-<ul>
-<li>Blog post introducing CE: [<a href="https://towardsdatascience.com/individual-recourse-for-black-box-models-5e9ed1e4b4cc">TDS</a>], [<a href="https://www.paltmeyer.com/blog/posts/individual-recourse-for-black-box-models/">blog</a>].</li>
-<li>Blog post on Laplace Redux: [<a href="https://towardsdatascience.com/go-deep-but-also-go-bayesian-ab25efa6f7b">TDS</a>], [<a href="https://www.paltmeyer.com/blog/posts/effortsless-bayesian-dl/">blog</a>].</li>
-<li>Blog post on Conformal Prediction: [<a href="https://towardsdatascience.com/conformal-prediction-in-julia-351b81309e30">TDS</a>], [<a href="https://www.paltmeyer.com/blog/posts/conformal-prediction/">blog</a>].</li>
-</ul>
-<blockquote>
-<p>… or get involved! 🤗</p>
-</blockquote>
-<ul>
-<li><a href="https://www.paltmeyer.com/CounterfactualExplanations.jl/dev/contributing/">Contributor’s Guide</a> for <code>CounterfactualExplanations.jl</code></li>
-<li><a href="file:///Users/FA31DU/code/ConformalPrediction.jl/docs/build/contribute.html">Contributor’s Guide</a> for <code>ConformalPrediction.jl</code></li>
-</ul>
-</div><div class="column" style="width:40%;">
-<p><img src="images/cfa_logo_color.png" height="auto" width="250" style="border-radius:50%; display: block; margin-left: auto; margin-right: auto;"></p>
-<div style="text-align: center;">
-<p style="display: inline; vertical-align: middle">
-<a href="https://www.linkedin.com/in/patrick-altmeyer-a2a25494/" style="display: inline-block; color: rgb(207, 142, 255) !important;"> <font style=""> <img width="60" height="60" src="https://s1g.s3.amazonaws.com/d0fc399dee4218d1e0e0399b8947acab.png" alt="LinkedIn (Personal)" style="border: none; max-width: 100%; height: 60px !important;"> </font> </a> <a href="https://twitter.com/paltmey" style="display: inline-block; color: rgb(207, 142, 255) !important;"> <font style=""> <img width="60" height="60" src="https://s1g.s3.amazonaws.com/3949237f892004c237021ac9e3182b1d.png" alt="Twitter" style="border: none; max-width: 100%; height: 60px !important;"> </font> </a> <a href="https://github.com/pat-alt" style="display: inline-block; color: rgb(207, 142, 255) !important;"> <font style=""> <img width="60" height="60" src="https://s1g.s3.amazonaws.com/47f4eb2d0082a8a3611d614b75a09db8.png" alt="Github" style="border: none; max-width: 100%; height: 60px !important;"> </font> </a> <a href="https://medium.com/@patrick.altmeyer" style="display: inline-block; color: rgb(207, 142, 255) !important;"> <font style=""> <img width="60" height="60" src="https://s1g.s3.amazonaws.com/175f49662614345cb7dbb95fce3f88af.png" alt="Medium" style="border: none; max-width: 100%; height: 60px !important;"> </font> </a>
-</p>
-</div>
-<p><img src="images/cfa_logo_color.png" height="auto" width="100" style="display: block; margin-left: auto; margin-right: auto;"></p>
 </div>
 </div>
 
@@ -1335,7 +961,23 @@ z\prime = \arg \min_{z\prime}  \ell(M(dec(z\prime)),t) + \lambda h(x\prime)
 <div class="footer footer-default">
 
 </div>
-</section></section>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-BlooHill:2008" class="csl-entry" role="listitem">
+Bloom, Howard S., Carolyn J. Hill, Alison Rebeck Black, and Mark W. Lipsey. 2008. <span>“Performance Trajectories and Performance Gaps as Achievement Effect-Size Benchmarks for Educational Interventions.”</span> <em>Journal of Research on Educational Effectiveness</em> 1 (4): 289–328. <a href="https://doi.org/10.1080/19345740802400072">https://doi.org/10.1080/19345740802400072</a>.
+</div>
+<div id="ref-DadeBrig:2012" class="csl-entry" role="listitem">
+Dadey, Nathan, and Derek Briggs. 2012. <span>“A Meta-Analysis of Growth Trends from Vertically Scaled Assessments.”</span> <em>Practical Assessment, Research &amp; Evaluation</em> 17 (December).
+</div>
+<div id="ref-Student:2023" class="csl-entry" role="listitem">
+R.Student, Sanford. 2023. <span>“What’s in a Year: Updated Annual Growth Trends on Vertically Scaled Tests.”</span> Presentation made at the 2023 NCME Conference, Chicago, IL, April, 2023.
+</div>
+<div id="ref-Yen:1986" class="csl-entry" role="listitem">
+Yen, Wendy M. 1986. <span>“The Choice of Scale for Educational Measurement: An <span>IRT</span> Perspective.”</span> <em>Journal of Educational Measurement</em> 23: 299–325.
+</div>
+</div>
+</section>
+
+
     </div>
   </div>
 
@@ -1524,7 +1166,7 @@ z\prime = \arg \min_{z\prime}  \ell(M(dec(z\prime)),t) + \lambda h(x\prime)
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1736,4 +1378,5 @@ z\prime = \arg \min_{z\prime}  \ell(M(dec(z\prime)),t) + \lambda h(x\prime)
     </script>
     
 
+<script src="https://platform.twitter.com/widgets.js"></script>
 </body></html>

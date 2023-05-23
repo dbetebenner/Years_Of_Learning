@@ -1,44 +1,15 @@
 ---
-title: "About"
+title: "Years of Learning"
 ---
 
-Welcome to the [effective data visualisation with R]{style="color:#006DAE;"} workshop!
+# Learning by the Year:<br>On the concept of a year's worth of learning
 
+A year's worth of learning (sometimes referred to as _a year's worth of growth_ or _a year's worth of progress_) is not a new idea. The phrase has
+been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I
+actually came across <a href="https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/yearsgrowth.pdf" target="_blank">a paper</a>
+that [@shangyi](https://github.com/shangyi) and I wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue
+suggesting something simple and obvious. Scratch beneath the surface and one finds the concept is anything but.
 
-<i class="fas fa-calendar" style="width:40px;"></i>  Tuesday 6th December 2022  
-<i class="fas fa-clock" style="width:40px;"></i>   9.00AM - 12.00PM AEDT  
-<i class="fas fa-map-pin" style="width:40px;"></i>  Zoom (links provided to participants via email)
+# Resources
 
-## Materials
-
-All materials are hosted on a GitHub repo [here](https://github.com/emitanaka/EDVR-workshop) and can be downloaded [here as a zip file](https://github.com/emitanaka/EDVR-workshop/archive/refs/heads/master.zip) (including the website, slides and exercises).
-
-Once the material is downloaded, open the `docs/index.html` in a browser to see this website ([emitanaka.org/EDVR-workshop](https://emitanaka.org/EDVR-workshop/)). 
-
-
-
-## Schedule
-
-
-## Installation
-
-This is only needed if the exercise links above do not work for you.
-
-```{r}
-#| eval: false
-install.packages(c("remotes", "learnr"))
-remotes::install_github("emitanaka/EDVR-workshop/pkg")
-```
-
-
-## Exercises 
-
-
-To run the exercises locally, install the packages under [Installation](#installation) and then run:
-
-```{r}
-#| eval: false
-learnr::run_tutorial("exercise-01", package = "edvr.workshop")
-learnr::run_tutorial("exercise-02", package = "edvr.workshop")
-```
-
+* [Year's of Learning GitHub Pages](https://dbetebenner.github.io/Years_Of_Learning/)
