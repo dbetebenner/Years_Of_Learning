@@ -1,15 +1,8 @@
 ---
-title: "Years of Learning"
+title: "About"
 ---
 
-# Learning by the Year:<br>On the concept of a year's worth of learning
+This website contains resources associated with the concept of _Years of Learning_. The seemingly common sense phrase is used frequently in discussions 
+about student learning is anything but simple and leads to significant conceptual and technical issues. This repo contains analyses of large scale educational
+data to better understand scale related issues associated with defining an amount of learning in terms of an amount of time (e.g., weeks, months, years).
 
-A year's worth of learning (sometimes referred to as _a year's worth of growth_ or _a year's worth of progress_) is not a new idea. The phrase has
-been commonplace at least since student growth models became prominent in the 00s. In looking through some old presentations the other day I
-actually came across <a href="https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/yearsgrowth.pdf" target="_blank">a paper</a>
-that [@shangyi](https://github.com/shangyi) and I wrote on the topic 15 years ago that I completely forgot about. The phrase rolls off the tongue
-suggesting something simple and obvious. Scratch beneath the surface and one finds the concept is anything but.
-
-# Resources
-
-* [Year's of Learning GitHub Pages](https://dbetebenner.github.io/Years_Of_Learning/)
