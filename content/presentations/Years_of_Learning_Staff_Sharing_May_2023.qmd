@@ -309,7 +309,6 @@ plot(qr_code("https://dbetebenner.github.io/Years_Of_Learning/content/presentati
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCrTLEbE7N5h6dkDkPshTN9ksAqSIPtDTyXNjSiovCHeOu8g/viewform?embedded=true" width="640" height="660" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </center>
 
-
 :::
 
 ::::
