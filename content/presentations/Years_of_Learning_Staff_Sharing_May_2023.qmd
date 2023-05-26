@@ -18,6 +18,7 @@ format:
     navigation-mode: vertical
     theme: [simple, css/style.scss]
     html-math-method: mathjax
+    embed-resources: true
     bibliography: bibliography/references.bib
 draft: false
 ---
