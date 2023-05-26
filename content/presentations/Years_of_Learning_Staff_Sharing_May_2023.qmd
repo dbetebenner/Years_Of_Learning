@@ -291,11 +291,28 @@ Longitudinal Change (Growth)
 
 ## Years of Learning: A Question
 
-<br> 
+
+::::{.columns}
+
+:::{.column width=50%}
+
+```{r, echo=FALSE}
+plot(qr_code("https://dbetebenner.github.io/Years_Of_Learning/content/presentations/Years_of_Learning_Staff_Sharing_May_2023.html#/years-of-learning-a-question"))
+```
+
+:::
+
+
+:::{.column width=50%}
 
 <center>
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeCrTLEbE7N5h6dkDkPshTN9ksAqSIPtDTyXNjSiovCHeOu8g/viewform?embedded=true" width="640" height="660" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </center>
+
+
+:::
+
+::::
 
 
 <!--
