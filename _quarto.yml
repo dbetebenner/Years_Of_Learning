@@ -20,7 +20,7 @@ website:
   navbar:
     title: "Years of Learning"
     logo: images/cfa_logo_grey.png
-    logo-href: "https://dbetebenner.github.io/Years_of_Learning/"
+    logo-href: "https://dbetebenner.github.io/Years_Of_Learning/index.html"
     search: false
     pinned: true
     foreground: "#7c7c7c"
@@ -54,7 +54,7 @@ website:
         href: https://twitter.com/nciea1
       - icon: github
         aria-label: github
-        href: https://https://github.com/dbetebenner/Years_of_Learning
+        href: https://github.com/dbetebenner/Years_of_Learning
 
   #socials
   open-graph: true
