@@ -77,7 +77,7 @@ fig(datafy(values, "years of learning", ignore_space=F), size=130, xlabs=c("sept
 - Despite the commonsense facade, relating amount of learning to time conceals significant technical and conceptual issues.
 - I would argue that the expression [__On grade level__]{style="color: red;"} is to [__attainment__]{style="color: blue;"} as [__a year's worth of learning__]{style="color: red;"} is to [__growth__]{style="color: blue;"}.
 
-[^1]: When going through some old documents I found a [paper](https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/yearsgrowth.pdf){.external target="_blank"} and [presentation](https://github.com/CenterForAssessment/SGP_Resources/blob/master/presentations/yearsgrowth_presentation.pdf){.external target="_blank"} I wrote for AERA on the phrase back in 2008 that I had completely forgotten about.
+[^1]: When going through some old documents I found a [paper](https://github.com/CenterForAssessment/SGP_Resources/blob/master/articles/yearsgrowth.pdf){.external target="_blank"} and [presentation](https://github.com/CenterForAssessment/SGP_Resources/blob/master/presentations/yearsgrowth_presentation.pdf){.external target="_blank"} I wrote for AERA on the topic back in 2008 that I had completely forgotten about.
 
 [^2]: Think of the expression _an honest day's work_.
 
